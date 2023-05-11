@@ -2,7 +2,7 @@ import { useState, createContext, useContext, useEffect } from 'react';
 import Fuse from 'fuse.js';
 
 
-import { getSearchData } from './search';
+import { getSearchData } from './search2';
 const SEARCH_KEYS = ['slug', 'name',"sku"];
 
 export const SEARCH_STATE_LOADING = 'LOADING';
@@ -13,7 +13,7 @@ export const SEARCH_STATE_LOADED = 'LOADED';
 export const SearchContext = createContext();
 
 
-export const SearchProvider = (props) => {
+export const SearchProvider2 = (props) => {
  
   const search = useSearchState();
   

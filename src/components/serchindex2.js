@@ -3,7 +3,7 @@
 
 
 
-import  Search  from './searchpageprof';
+import  Search2  from './searchpageprof2';
 
 
  
@@ -12,7 +12,7 @@ import  Search  from './searchpageprof';
     
      return (
         <>
-        <Search/>
+        <Search2/>
        
             
      </>
