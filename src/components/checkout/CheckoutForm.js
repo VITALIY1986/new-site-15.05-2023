@@ -48,9 +48,9 @@ address2: '',
    // errors: null
 // }
 
-const CheckoutForm = ({countriesData}) => {
+const CheckoutForm = ({}) => {
 
-    const {billingCountries, shippingCountries} = countriesData || {}
+   
 
     const initialState = {
         billing: {
@@ -215,7 +215,7 @@ const CheckoutForm = ({countriesData}) => {
                                 <h2 className="text-xl font-medium mb-4">Деталі доставки</h2>
                                 <Address
                                     states={theShippingStates}
-                                    countries={shippingCountries}
+                                  
                                     input={input?.shipping}
                                     handleOnChange={(event) => handleOnChange(event, true, true)}
                                     isFetchingStates={isFetchingShippingStates}
@@ -239,7 +239,7 @@ const CheckoutForm = ({countriesData}) => {
                                     <h2 className="text-xl font-medium mb-4">Платіжна інформація</h2>
                                     <Address
                                         states={theBillingStates}
-                                        countries={billingCountries}
+                                        
                                         input={input?.billing}
                                         handleOnChange={(event) => handleOnChange(event, false, true)}
                                         isFetchingStates={isFetchingBillingStates}
