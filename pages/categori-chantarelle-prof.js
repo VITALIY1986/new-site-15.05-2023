@@ -28,7 +28,7 @@ export async function getStaticProps() {
 
 	return {
 		props: {
-			
+			productChantarelleProf: data?.productChantarelleHome?.children?.nodes || [],
             heroCarousel: data?.heroCarousel?.nodes[0]?.children?.nodes ? data.heroCarousel.nodes[0].children.nodes : []
            
 		},

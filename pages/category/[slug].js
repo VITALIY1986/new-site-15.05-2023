@@ -46,7 +46,8 @@ export async function getStaticProps(context) {
 
     return {
         props: {
-           
+            categoryName: data?.productCategory?.name ?? '',
+            products: data?.productCategory?.products?.nodes ?? []
         },
         revalidate: 1
     }

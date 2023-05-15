@@ -28,7 +28,7 @@ export async function getStaticProps() {
 
 	return {
 		props: {
-		
+			productMccmProf: data?.productMCCM?.children?.nodes || [],
             heroCarousel: data?.heroCarousel?.nodes[0]?.children?.nodes ? data.heroCarousel.nodes[0].children.nodes : []
            
 		},

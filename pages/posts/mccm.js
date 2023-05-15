@@ -51,6 +51,7 @@ export async function getStaticProps () {
 		props: {
 	
 			
+			mccm: data?.mccm?.posts?.nodes ? data.mccm.posts.nodes : [],
 		
 		},
 		revalidate: 1

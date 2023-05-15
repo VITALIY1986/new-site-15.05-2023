@@ -89,7 +89,7 @@ export async function getStaticProps () {
 
 	return {
 		props: {
-	      
+	        arkana: data?.arkana ? data.arkana : [],
 	        heroCarousel: data?.heroCarousel?.nodes[0]?.children?.nodes ? data.heroCarousel.nodes[0].children.nodes : []
 		},
 		revalidate: 1

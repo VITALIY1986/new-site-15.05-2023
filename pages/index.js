@@ -116,7 +116,15 @@ export default function Home (props) {
 				
 				
 			
+			
+				 <AliceCarousel
+        
+        items={items}
+        responsive={responsive}
+		disableDotsControls={true}
+		disableButtonsControls={true}
 	
+    />
 							
 			
 		
