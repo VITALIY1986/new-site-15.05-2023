@@ -27,7 +27,7 @@ export default function Home (props) {
 	const { isLoggedIn } = useAuth();
 	
 	
-	
+	<SarchProps isLoggedIn={isLoggedIn}/>
 
 	const questionsAnswers = [
 	
@@ -86,10 +86,9 @@ export default function Home (props) {
 	
 		
 	];
-	news.map(( post,index )=>items.push(<Post key={ post.id } index={index} post={ post } />) );
-
 	
-	console.log(products.length)
+	
+	
 	 
 
 	return (
@@ -153,15 +152,7 @@ export default function Home (props) {
 					</div>
 				</div>
 				{/*Prodduts*/ }
-		{		<div className={`${ products.length === 0 ? 'hidden' : 'block products container mx-auto my-10  '}`}>
-					<h2 className="products-main-title main-title mb-5 text-3xl text-center uppercase"><span className="main-title-inner">Акції</span></h2>
-					<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-4">
-						{ products.length ? (
-							products.map( product => <ProductHome key={ product.id } isLoggedIn={isLoggedIn} product={ product }/> )
-						) : '' }
-					</div>
-				</div>}
-			
+	
 				</div>
 				</div>
 				<h2 className="products-main-title main-title mb-5 text-3xl text-center uppercase"><span className="main-title-inner">Наші Марки</span></h2>
@@ -185,11 +176,8 @@ export async function getStaticProps () {
 
 	return {
 		props: {
-		questionsAnswers:data?.category?.posts?.nodes ? data.category.posts.nodes : [],
-			postsCategory: data?.category ? data.category : [],
-			news: data?.news?.posts?.nodes ? data.news.posts.nodes : [],
-			productCategories: data?.productCategories?.nodes ? data.productCategories.nodes : [],
-			products: data?.products?.nodes ? data.products.nodes : [],
+	
+			
 			featuredproducts: data?.featuredproducts?.nodes ? data.featuredproducts.nodes : [],
 			heroCarousel: data?.heroCarousel?.nodes[0]?.children?.nodes ? data.heroCarousel.nodes[0].children.nodes : []
 		},
