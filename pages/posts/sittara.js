@@ -52,7 +52,7 @@ export async function getStaticProps () {
 		props: {
 	
 			
-			sittara: data?.sittara?.posts?.nodes ? data.sittara.posts.nodes : [],
+		
 		
 		},
 		revalidate: 1

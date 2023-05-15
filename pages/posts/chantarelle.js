@@ -51,7 +51,7 @@ export async function getStaticProps () {
 		props: {
 	
 			
-			chantarelle: data?.chantarelle?.posts?.nodes ? data.chantarelle.posts.nodes : [],
+		
 		
 		},
 		revalidate: 1

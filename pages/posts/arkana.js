@@ -52,7 +52,7 @@ export async function getStaticProps () {
 		props: {
 	
 			
-			arkana: data?.arkana?.posts?.nodes ? data.arkana.posts.nodes : [],
+		
 		
 		},
 		revalidate: 1

@@ -91,7 +91,7 @@ export async function getStaticProps () {
 
 	return {
 		props: {
-	        chantarelle: data?.chantarelle ? data.chantarelle : [],
+	      
 	        heroCarousel: data?.heroCarousel?.nodes[0]?.children?.nodes ? data.heroCarousel.nodes[0].children.nodes : []
 		},
 		revalidate: 1

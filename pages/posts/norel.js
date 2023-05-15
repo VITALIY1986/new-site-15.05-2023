@@ -51,7 +51,6 @@ export async function getStaticProps () {
 		props: {
 	
 			
-			norel: data?.norel?.posts?.nodes ? data.norel.posts.nodes : [],
 		
 		},
 		revalidate: 1
