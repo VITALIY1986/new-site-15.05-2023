@@ -13,8 +13,8 @@ module.exports = {
       height: {
         'almost-screen': 'calc(-16rem + 100vh)',
         '308px': '19.25rem',
-        'sliderlg': '70vh',
-        'slidersm': '30vh',
+        'sliderlg': '80vh',
+        'slidersm': '70vh',
       },
       purplebt:{
         DEFAULT: '#783ea8',

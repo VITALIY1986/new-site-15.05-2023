@@ -176,8 +176,11 @@ export async function getStaticProps () {
 
 	return {
 		props: {
-	
-			
+		questionsAnswers:data?.category?.posts?.nodes ? data.category.posts.nodes : [],
+			postsCategory: data?.category ? data.category : [],
+			news: data?.news?.posts?.nodes ? data.news.posts.nodes : [],
+			productCategories: data?.productCategories?.nodes ? data.productCategories.nodes : [],
+			products: data?.products?.nodes ? data.products.nodes : [],
 			featuredproducts: data?.featuredproducts?.nodes ? data.featuredproducts.nodes : [],
 			heroCarousel: data?.heroCarousel?.nodes[0]?.children?.nodes ? data.heroCarousel.nodes[0].children.nodes : []
 		},
@@ -185,4 +188,3 @@ export async function getStaticProps () {
 	}
 
 };
-

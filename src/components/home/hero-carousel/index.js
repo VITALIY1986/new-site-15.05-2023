@@ -9,7 +9,7 @@ const HeroCarousel = ({heroCarousel}) => {
     }
 
     const autoPlay = true;
-    const slideDuration = 4; // in seconds
+    const slideDuration = 2; // in seconds
     const activeIndexRef = useRef( { activeIndex: 0 } );
     const slideRef = useRef( 0 );
     const [ slide, setSlide ] = useState( 0 );
@@ -63,7 +63,7 @@ const HeroCarousel = ({heroCarousel}) => {
                     heroCarousel.map( ( item, index ) => {
                         const opacity = ( activeIndex === index || 1 === heroCarousel.length ) ? 'opacity-100 transition duration-500 ease-in-out' : 'opacity-0 transition duration-500 ease-in-out';
                         return (
-                            <div key={item?.id}className={`${opacity} banner-img-container absolute top-0 left-0 bottom-0 transition duration-500 ease-in-out  w-full slidervh overflow-hidden`}>
+                            <div key={item?.id}className={`${opacity} solid_corection banner-img-container absolute top-0 left-0 bottom-0 transition duration-500 ease-in-out  w-full slidervh overflow-hidden`}>
                                 <img className={`h-full w-full object-cover`}
                                     src={item?.image?.sourceUrl} srcSet={item?.image?.srcSet} loading="lazy"    width="1000"
                                     height="500"
@@ -81,9 +81,9 @@ const HeroCarousel = ({heroCarousel}) => {
                     </button>
             </div>*/}
             
-            <div className="banner-content py-3 opacity-50 px-10  absolute z-10 bottom-0 lg:bottom-10 bg-black ">
-                <h2 className="banner-content__title text-base md:text-5xl uppercase text-white">{heroCarousel[activeIndex]?.name}</h2>
-                <p className="banner-content__description text-base md:text-2xl text-white">{heroCarousel[activeIndex]?.description}</p>
+            <div className="banner-content py-3  px-10  absolute z-10 bottom-0 lg:bottom-40 lg:left-12">
+                <h2 className="banner-content__title text-base md:text-7xl  text-white font-playfair font-bold mb-4">{heroCarousel[activeIndex]?.name}</h2>
+                <p className="banner-content__description text-base md:text-5xl text-white bg-red-600 p-3 inline-block">{heroCarousel[activeIndex]?.description}</p>
               {/* <Link href={`/category/${heroCarousel[activeIndex]?.slug}/`}>
                     <a className="banner-content__link text-gray-700">+ Explore</a>
             </Link>*/}
