@@ -27,7 +27,7 @@ export default function Home (props) {
 	const { isLoggedIn } = useAuth();
 	
 	
-	<SarchProps isLoggedIn={isLoggedIn}/>
+	
 
 	const questionsAnswers = [
 	

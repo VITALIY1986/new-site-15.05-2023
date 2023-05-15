@@ -344,7 +344,7 @@
         },
         {
           "name": "Blue Retinol Regenerating Mask 150ml",
-          "slug": "blue-retinol-regenerating-mask-150ml",
+          "slug": "blue-retinol-regenerating-mask-150m",
           "sku": "CP0842"
         },
         {
