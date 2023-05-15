@@ -98,7 +98,7 @@ export default function Home (props) {
 	<div className="main">
 				{/*Hero Carousel*/}
 				<HeroCarousel heroCarousel={heroCarousel}/>
-				<div class="marquee text-sm text-3 text-s lg:text-3xl font-thin"><span>Сайт в процесі розробки, можливі помилки в інформації та роботі. Приносимо вибачення за тимчасові незручності! </span></div>
+				<div class="marquee  text-6xl font-playfair font-bold mb-4"><span>Avem cele mai bune prețuri - și o calitate excelentă </span></div>
 				
 			
 				{/*<a href="myfile.pdf"  download>Download</a>*/}
