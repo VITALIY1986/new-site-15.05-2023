@@ -115,11 +115,11 @@ export default function Home (props) {
 				<div className="products container mx-auto   ">
 				<h2 className="products-main-title main-title mb-5 text-3xl text-center uppercase"><span className="main-title-inner">НОВИНИ</span></h2>
 				
-				<div className="flex justify-center items-center">
-					<div className=" m-3   rounded-lg overflow-hidden"><Image   height={900}   fill={true} objectFit={'cover'} src={categoryStripe}  />
+				<div className="flex justify-center items-center flex-col lg:flex-row">
+					<div className="w-full lg:w-6/12 m-3  relative "><Image   height={900}  objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  />
 						
 					</div>
-					<div className=" m-3   rounded-lg overflow-hidden"><Image  height={900}    fill={true} objectFit={'cover'}  src={categoryStripe}  />
+					<div className="w-full lg:w-6/12 m-3  relative "><Image  height={900}   objectPosition="center center" fill={true} objectFit={'cover'}  src={categoryStripe}  />
 						
 					</div>
 				</div>
