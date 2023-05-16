@@ -24,22 +24,22 @@ module.exports = {
         current: 'currentColor',
         blue: {
          
-          DEFAULT: '#7372aa',
+          DEFAULT: '#e44244',
           
         },
         purple: {
-          DEFAULT: '#2b2b3e'
+          DEFAULT: '#e44244'
         },
         very_peri: {
-          DEFAULT: '#6661b1'
+          DEFAULT: '#e44244'
         },
         very_peri_dark: {
           DEFAULT: '#413f5d'
         },
         pink: {
-          light: '#ff7ce5',
-          DEFAULT: '#ff49db',
-          dark: '#ff16d1',
+          light: '#e44244',
+          DEFAULT: '#e44244',
+          dark: '#e44244',
         },
         gray: {
           darkest: '#1f2d3d',
