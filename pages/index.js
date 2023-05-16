@@ -17,9 +17,9 @@ import { useAuth } from '../src/components/login-function/hooks';
 import Head from "next/head"
 import AliceCarousel from 'react-alice-carousel';
 import Navigation from "../src/components/navigation-chantarelle";
-import profilePic from "../public/pattern_chant.png"
+import categoryStripe from "../public/pattern_chant.jpg"
 import 'react-alice-carousel/lib/alice-carousel.css';
-
+import Image from 'next/image'
 
 
 export default function Home (props) {
@@ -112,10 +112,17 @@ export default function Home (props) {
 			
 			
 			<div className="px-4">
-				<div className="products container mx-auto mt-32  ">
+				<div className="products container mx-auto   ">
 				<h2 className="products-main-title main-title mb-5 text-3xl text-center uppercase"><span className="main-title-inner">НОВИНИ</span></h2>
 				
-				
+				<div className="flex justify-center items-center">
+					<div className=" m-3   rounded-lg overflow-hidden"><Image   height={900}   fill={true} objectFit={'cover'} src={categoryStripe}  />
+						
+					</div>
+					<div className=" m-3   rounded-lg overflow-hidden"><Image  height={900}    fill={true} objectFit={'cover'}  src={categoryStripe}  />
+						
+					</div>
+				</div>
 			
 			
 				 <AliceCarousel
@@ -156,13 +163,7 @@ export default function Home (props) {
 	
 				</div>
 				</div>
-				<h2 className="products-main-title main-title mb-5 text-3xl text-center uppercase"><span className="main-title-inner">Наші Марки</span></h2>
-			<div className="w-full lg:mb-20">
-				<div className="products container mx-auto ">
-			
-					<Navigation profilePic={profilePic} questionsAnswers={questionsAnswers}/>
-				</div>
-				</div>
+				
 				
 			</Layout>
 		
