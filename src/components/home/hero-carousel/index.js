@@ -1,7 +1,8 @@
 import { isEmpty, isArray } from 'lodash';
 import Link from "next/link";
 import {useState, useEffect, useRef} from 'react';
-
+import Sale from '../../../../public/sale.png'
+import Image from 'next/image'
 const HeroCarousel = ({heroCarousel}) => {
 
     if ( isEmpty(heroCarousel) || ! isArray( heroCarousel ) ) {
@@ -80,7 +81,7 @@ const HeroCarousel = ({heroCarousel}) => {
                         <svg width="25px" className="inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                     </button>
             </div>*/}
-            
+            <div className='absolute right-10 top-10 '><Image width={100} height={100} src={Sale}  /><div className='absolute top-10 left-10 -translate-x-1/4 -translate-y-1/4 text-white text-2xl'><p >dfdg</p></div></div>
             <div className="banner-content py-3  px-10  absolute z-10 bottom-20 lg:bottom-40 lg:left-12">
                 <h2 className="banner-content__title text-5xl md:text-7xl  text-white font-playfair font-bold mb-4">{heroCarousel[activeIndex]?.name}</h2>
                 <p className="banner-content__description text-2xl md:text-5xl text-white bg-yellov  inline-block">{heroCarousel[activeIndex]?.description}</p>
