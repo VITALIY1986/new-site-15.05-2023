@@ -476,4 +476,16 @@ button:focus-visible {
 }
 
 
+.rotate_animation {
 
+  width: 100px;
+  height: 100px;
+  transition: all 0.5s ease;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+}
