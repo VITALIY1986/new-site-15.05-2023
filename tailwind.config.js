@@ -14,7 +14,7 @@ module.exports = {
         'almost-screen': 'calc(-16rem + 100vh)',
         '308px': '19.25rem',
         'sliderlg': '80vh',
-        'slidersm': '70vh',
+        'slidersm': '80vh',
       },
       purplebt:{
         DEFAULT: '#783ea8',
