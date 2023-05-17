@@ -47,14 +47,19 @@ const GalleryCarousel = ({gallery}) => {
 
     return (
         <div className="banner flex flex-col sm:flex-row justify-between overflow-hidden md:mr-4">
-            <div className="banner-img w-full">
+            <div className="banner-img w-full relative h-96">
                 {
                     gallery.map( ( item, index ) => {
                         const opacity = ( activeIndex === index || 1 === gallery.length ) ? 'opacity-100' : 'opacity-0';
                         return (
                             <div key={item?.id} className={`${opacity} banner-img-container absolute top-0 left-0`}>
-                                <img
-                                    src={item?.mediaItemUrl} loading="lazy" alt={ item?.altText ? item?.altText : item?.title }
+                                <img className='img-gallery'
+                              objectPosition="center center" fill={true} objectFit={'cover'}
+                                height={1000}
+                              
+                                     src={item?.mediaItemUrl} 
+                                     loading="lazy" 
+                                     alt={ item?.altText ? item?.altText : item?.title }
                                    
                                   
                                 />

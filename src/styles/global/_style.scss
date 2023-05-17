@@ -489,3 +489,8 @@ button:focus-visible {
     transform: rotate(360deg);
   }
 }
+.img-gallery{
+  object-position: center center;
+  height: 500px;
+  object-fit: cover;
+}
