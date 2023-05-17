@@ -29,7 +29,16 @@ export default function Home (props) {
 	
 	
 	<SarchProps isLoggedIn={isLoggedIn}/>
+	const imageUrl = Telegram;
 
+	const handleDownload = () => {
+	  const link = document.createElement('a');
+	  link.href = imageUrl;
+	  link.download = 'telegram.png';
+	  document.body.appendChild(link);
+	  link.click();
+	  document.body.removeChild(link);
+	};
 	const questionsAnswers = [
 	
         {
@@ -93,7 +102,11 @@ export default function Home (props) {
 	 
 
 	return (
-	
+		<>
+	<Head>
+<title>Lenjerie de pat de calitate, Premium și de lux - Descoperă cea mai bună lenjerie de pat</title>
+
+	</Head>
 
 			<Layout>
 	<div className="main">
@@ -152,7 +165,7 @@ export default function Home (props) {
 							<p className="mb-3 text-justify">Dacă întâmpinați probleme în conectarea sau scanarea codului QR, vă rugăm să contactați operatorul nostru în acest chat. Vă vom ajuta cu plăcere să vă alăturați grupului nostru de Telegram.</p>
 							<p className="">Vă mulțumim că ați ales Luxtex!</p>
 					</div>
-					<div className="w-full lg:w-6/12 m-3  relative "><Image       src={Telegram}  />
+					<div onClick={handleDownload} className="w-full lg:w-6/12 m-3  relative "><Image       src={Telegram}  />
 						
 					</div>
 				</div>
@@ -165,7 +178,7 @@ export default function Home (props) {
 					
 				{/*Products*/ }
 				<div className="products container mx-auto my-10  ">
-					<h2 className="products-main-title main-title mb-5 text-3xl text-center uppercase"><span className="main-title-inner">Новинки</span></h2>
+					<h2 className="products-main-title main-title mb-10  text-center text-5xl  lg:text-6xl font-bold">Новинки</h2>
 					<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
 					{ featuredproducts.length ? (
 							featuredproducts.map( product => <ProductHome key={ product.id } isLoggedIn={isLoggedIn} product={ product }/> )
@@ -173,13 +186,22 @@ export default function Home (props) {
 					</div>
 				</div>
 				{/*Prodduts*/ }
-	
+				<div className="mb-10">
+					<h1 className="text-5xl  lg:text-6xl font-bold mb-10">Lenjerie de pat de calitate, Premium și de lux - Descoperă cea mai bună lenjerie de pat la Luxtex</h1>
+					
+					<p>Bine ați venit la Luxtex, destinația dumneavoastră de încredere pentru lenjeria de pat de cea mai înaltă calitate, cu un nivel Premium și luxuriant. Suntem mândri să vă oferim o gamă largă de lenjerii de pat, create cu atenție și atenție la detalii, pentru a vă oferi cea mai bună experiență de odihnă și confort.</p>
+				<p>Indiferent dacă căutați o lenjerie de pat de calitate superioară, un design exclusiv sau materiale luxuriante, Luxtex vă întâmpină cu o selecție impresionantă. De la seturi de lenjerii de pat din bumbac moale și respirabil, până la lenjerii de pat din mătase fină sau satin delicat, veți găsi opțiuni care se potrivesc stilului și preferințelor dumneavoastră.</p>
+				<p>Calitatea și durabilitatea sunt principii de bază pentru Luxtex. Utilizăm materiale premium și tehnici de fabricație de înaltă calitate pentru a vă oferi lenjerii de pat care rezistă în timp și oferă o senzație plăcută la atingere. Fiecare detaliu este atent studiat, de la cusături precise până la finisaje impecabile, pentru a vă asigura că aveți parte de produse de cea mai înaltă calitate.</p>
+				<p>Experimentați confortul și rafinamentul pe care îl oferă lenjeriile de pat de lux de la Luxtex. Fie că doriți să transformați dormitorul într-un sanctuar de relaxare sau căutați o notă elegantă și sofisticată, gama noastră variată de modele și culori vă permite să alegeți ceea ce se potrivește cel mai bine stilului dumneavoastră.</p>
+				<p>Calitatea superioară, luxul și atenția la detalii sunt caracteristicile care ne definesc. Încrederea clienților noștri este prioritatea noastră, de aceea ne străduim să oferim numai produse excepționale și servicii impecabile.</p>
+				<p>Descoperiți cea mai bună lenjerie de pat la Luxtex și transformați dormitorul într-un spațiu de relaxare și rafinament. Vă așteptăm cu o selecție deosebită de lenjerii de pat de calitate superioară, Premium și de lux, care să vă ofere confortul și satisfacția deplină.</p>
+				</div>
 				</div>
 				</div>
 				
 				
 			</Layout>
-		
+			</>
 	)
 };
 
