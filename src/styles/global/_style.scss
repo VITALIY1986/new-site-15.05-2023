@@ -369,6 +369,9 @@ $light-grayish-blue: hsl(240, 5%, 91%);
     transition: all 200ms ease-out;
   }
 }
+.gallery-custume{
+height: 40rem;
+}
 @media only screen and (max-width: 800px) {
   .illustration__woman-desktop {
     max-width: 120%;
@@ -491,6 +494,7 @@ button:focus-visible {
 }
 .img-gallery{
   object-position: center center;
+  width: 1000px;
   height: 500px;
   object-fit: cover;
 }

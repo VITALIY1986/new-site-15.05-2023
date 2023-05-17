@@ -47,7 +47,7 @@ const GalleryCarousel = ({gallery}) => {
 
     return (
         <div className="banner flex flex-col sm:flex-row justify-between overflow-hidden md:mr-4">
-            <div className="banner-img w-full relative h-96">
+            <div className="banner-img w-full relative h-gallerysm">
                 {
                     gallery.map( ( item, index ) => {
                         const opacity = ( activeIndex === index || 1 === gallery.length ) ? 'opacity-100' : 'opacity-0';

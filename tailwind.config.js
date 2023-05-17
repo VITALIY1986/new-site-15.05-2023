@@ -15,6 +15,8 @@ module.exports = {
         '308px': '19.25rem',
         'sliderlg': '80vh',
         'slidersm': '80vh',
+       
+        'gallerysm': '29rem',
       },
       purplebt:{
         DEFAULT: '#783ea8',
@@ -52,6 +54,7 @@ module.exports = {
       width: {
         '308px': '19.25rem',
         '600px': '37.5rem',
+        
       },
      
     },
