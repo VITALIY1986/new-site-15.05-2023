@@ -144,7 +144,7 @@ export default function Home (props) {
 		
 			</div>
 					{/*Post
-					<div className="products container mx-auto my-32 px-4 ">
+					<div className="products container  mx-auto my-32 px-4 ">
 					<h2 className="products-main-title main-title mb-5 text-3xl text-center uppercase"><span className="main-title-inner">{postsCategory?.name}</span></h2>
 					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
 						{ posts.length ? (
