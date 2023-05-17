@@ -18,6 +18,7 @@ import Head from "next/head"
 import AliceCarousel from 'react-alice-carousel';
 import Navigation from "../src/components/navigation-chantarelle";
 import categoryStripe from "../public/pattern_chant.jpg"
+import Telegram from "../public/telegram.png"
 import 'react-alice-carousel/lib/alice-carousel.css';
 import Image from 'next/image'
 
@@ -98,7 +99,7 @@ export default function Home (props) {
 	<div className="main">
 				{/*Hero Carousel*/}
 				<HeroCarousel heroCarousel={heroCarousel}/>
-				<div class="marquee text-5xl  lg:text-6xl font-playfair font-bold mb-4"><span>Avem cele mai bune prețuri - și o calitate excelentă </span></div>
+				<div class="marquee text-5xl  lg:text-6xl font-playfair font-bold "><span>Avem cele mai bune prețuri - și o calitate excelentă </span></div>
 				
 			
 				{/*<a href="myfile.pdf"  download>Download</a>*/}
@@ -113,7 +114,7 @@ export default function Home (props) {
 			
 			<div className="px-4">
 				<div className="products container mx-auto   ">
-				<h2 className="products-main-title main-title mb-5 text-3xl text-center uppercase"><span className="main-title-inner">CATEGORY</span></h2>
+
 				
 				<div className="flex justify-center items-center flex-col lg:flex-row">
 					<div className="w-full lg:w-6/12 m-3  relative "><Image   height={900}  objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  />
@@ -125,15 +126,7 @@ export default function Home (props) {
 				</div>
 			
 			
-				 <AliceCarousel
-        
-        items={items}
-        responsive={responsive}
-		disableDotsControls={true}
-		disableButtonsControls={true}
-	
-    />
-							
+				
 			
 		
 			</div>
@@ -148,7 +141,27 @@ export default function Home (props) {
 				</div>*/ }
 					{/*Star*/ }
 			
+					<div className="products container mx-auto mt-20  ">
+				<h2 className="products-main-title main-title mb-5 text-5xl  lg:text-6xl text-center  font-bold">Dragi clienți Luxtex!</h2>
 				
+				<div className="flex justify-center items-center flex-col lg:flex-row">
+					<div className="w-full lg:w-6/12 m-3  relative ">
+					
+						<p className="text-justify mb-3">Doriți să fiți la curent cu toate evenimentele din compania noastră? Doriți să primiți informații despre produsele noi, promoții și reduceri în 
+							fiecare lună? Atunci alăturați-vă grupului nostru de Telegram prin intermediul codului QR!</p>
+							<p className="mb-3 text-justify">Dacă întâmpinați probleme în conectarea sau scanarea codului QR, vă rugăm să contactați operatorul nostru în acest chat. Vă vom ajuta cu plăcere să vă alăturați grupului nostru de Telegram.</p>
+							<p className="">Vă mulțumim că ați ales Luxtex!</p>
+					</div>
+					<div className="w-full lg:w-6/12 m-3  relative "><Image       src={Telegram}  />
+						
+					</div>
+				</div>
+			
+			
+				
+			
+		
+			</div>
 					
 				{/*Products*/ }
 				<div className="products container mx-auto my-10  ">
