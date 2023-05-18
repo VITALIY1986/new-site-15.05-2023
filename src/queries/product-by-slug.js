@@ -7,6 +7,7 @@ export const PRODUCT_BY_SLUG_QUERY = gql` query Product($slug: ID!) {
 	  averageRating
 	  slug
 	  description
+	  sku
 	  galleryImages {
           nodes {
             id
@@ -24,28 +25,36 @@ export const PRODUCT_BY_SLUG_QUERY = gql` query Product($slug: ID!) {
 	  }
 	  name
 	  ... on SimpleProduct {
-		price
+		price(format: RAW)
 		id
-		regularPrice
+		regularPrice(format: RAW)
+		salePrice(format: RAW)
+		featured 
 	  }
 	  ... on VariableProduct {
-		price
+		price(format: RAW)
 		id
-		regularPrice
+		regularPrice(format: RAW)
+		salePrice(format: RAW)
+		featured 
 	  }
 	  ... on ExternalProduct {
-		price
+		price(format: RAW)
 		id
-		regularPrice
+		regularPrice(format: RAW)
+		salePrice(format: RAW)
 		externalUrl
+		featured 
 	  }
 	  ... on GroupProduct {
 		products {
 		  nodes {
 			... on SimpleProduct {
 			  id
-			  price
-			  regularPrice
+			  price(format: RAW)
+			  regularPrice(format: RAW)
+			  salePrice(format: RAW)
+			  featured 
 			}
 		  }
 		}
@@ -64,3 +73,29 @@ export const PRODUCT_SLUGS = gql` query Products {
   }
 }
 `;
+export const POST_BY_SLUG_QUERY = gql` query Post($slug: ID!) {
+	post(id: $slug) {
+        id
+        title
+        slug 
+		content
+		featuredImage {
+			node {
+			  sourceUrl
+			}
+		  }
+  }
+  
+}
+`;
+
+export const POSTS_SLUGS = gql` query Posts {
+	posts {
+		nodes {
+		  id
+		  slug
+		  
+		}
+	  }
+}
+`;  
