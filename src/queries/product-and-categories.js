@@ -158,6 +158,7 @@ mccm:  category(id: "dGVybTozMjg0") {
       averageRating
       slug
       description
+      shortDescription
       sku
       image {
         id
@@ -166,25 +167,25 @@ mccm:  category(id: "dGVybTozMjg0") {
       }
       name
       ... on SimpleProduct {
-        price(format: RAW)
-        regularPrice(format: RAW)
-        salePrice(format: RAW)
+        price
+        regularPrice
+        salePrice
         id
         featured
       }
       ... on VariableProduct {
-        price(format: RAW)
+        price
         id
-        regularPrice(format: RAW)
-        salePrice(format: RAW)
+        regularPrice
+        salePrice
         featured
       }
       ... on ExternalProduct {
-        price(format: RAW)
+        price
         id
         externalUrl
-        regularPrice(format: RAW)
-        salePrice(format: RAW)
+        regularPrice
+        salePrice
         featured
       }
       ... on GroupProduct {

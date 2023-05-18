@@ -252,27 +252,25 @@ export const getFormattedCartLog = ( data ) => {
 		return formattedCart;
 	}
 
+	
 	const givenProducts = data.cart.contents.nodes;
 
 	// Create an empty object.
 	formattedCart = {};
 	formattedCart.products = [];
 	let totalProductsCount = 0;
-	const b = data?.cart?.total
-	const l = b.slice(1);
-	const e = parseFloat(l);
-	const d = e/ 2;
+
 	for( let i = 0; i < givenProducts.length; i++  ) {
 		const givenProduct = givenProducts?.[ i ]?.product?.node;
 		const product = {};
 		const total = getFloatVal( givenProducts[ i ].total );
-const totales = d
+
 		product.productId = givenProduct?.productId ?? '';
 		product.cartKey = givenProducts?.[ i ]?.key ?? '';
 		product.name = givenProduct?.name ?? '';
 		product.qty = givenProducts?.[ i ]?.quantity;
-		product.price = total * product?.qty;
-		product.totalPrice = givenProducts?.[ i ]?.total+100?? '';
+		product.price = total / product?.qty;
+		product.totalPrice = givenProducts?.[ i ]?.total ?? '';
 		product.image = {
 			sourceUrl: givenProduct?.image?.sourceUrl ?? '',
 			srcSet: givenProduct?.image?.srcSet ?? '',
@@ -285,13 +283,9 @@ const totales = d
 		// Push each item into the products array.
 		formattedCart.products.push( product );
 	}
-	function circumference(r) {
-		return parseFloat(r) ;
-	  }
 
-console.log( d)
 	formattedCart.totalProductsCount = totalProductsCount;
-	formattedCart.totalProductsPrice = d ?? '';
+	formattedCart.totalProductsPrice = data?.cart?.total ?? '';
 
 	return formattedCart;
 

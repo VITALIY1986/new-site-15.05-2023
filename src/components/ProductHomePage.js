@@ -6,17 +6,8 @@ import {DEFAULT_PRODUCT_HOME_IMG_URL} from "../constants/urls";
 
 const Product = ( props ) => {
 	const { product,isLoggedIn } = props;
-	const regular = product?.regularPrice/2;
-	const re = product?.regularPrice ;
-	const regula = +re + +regular;
-	const login = product?.regularPrice;
-	const rar = isLoggedIn ? login :  regula  ;  
-const par = Number(rar);
-
-
-const amount = par - product?.price;
-const interest = par/100;
-const result = amount/interest;
+	
+	
 
 
 
@@ -53,7 +44,7 @@ const result = amount/interest;
 				
 					{/*{product?.regularPrice }/////{product?.salePrice }/////{product?.price}*/}
                  {/*}   {product?.salePrice ?  <div className="">  <strike className="mr-1 text-red-200">₴{par.toFixed(2)}</strike>₴{product?.price}</div> :   <div className="">₴{par.toFixed(2)}</div>}*/}
-		  {product?.salePrice   ?  <div className="{`${ isLoggedIn ? 'hidden' : 'block ' }`}">  <strike className="mr-1 text-red-200">{par.toFixed(2)}грн</strike>{product?.price}грн</div> :   <div className="mt-3 mb-3 text-xl font-bold"> {isLoggedIn ? login : `${par.toFixed(2)}`}грн</div>}
+				 <Price salesPrice={product?.price} regularPrice={product?.regularPrice}/>
 				{/*	{product?.salePrice  ?  <div className={`${ isLoggedIn ? 'block' : 'hidden ' }`}> ₴{par.toFixed(4)}</div> :   ''}*/}
 				{/*	<div className="product-description text-sm text-gray-700 " dangerouslySetInnerHTML={{ __html: (product?.description)}}/>*/}
 			{/*	<Price salesPrice={product?.price} regularPrice={product?.regularPrice}/>*/}

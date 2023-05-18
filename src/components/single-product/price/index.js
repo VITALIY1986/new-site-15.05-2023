@@ -1,8 +1,10 @@
 import {isEmpty} from "lodash";
 
 const Price = ({ regularPrice = 0, salesPrice }) => {
-   
-  
+
+    if ( isEmpty( salesPrice ) ) {
+    	return null;
+    }
 
     /**
      * Get discount percent.
@@ -22,22 +24,22 @@ const Price = ({ regularPrice = 0, salesPrice }) => {
 
         return {
             discountPercent: formattedSalesPrice !== formattedRegularPrice ? `(${discountPercent.toFixed(2)}%) OFF` : null,
-            strikeThroughClass: formattedSalesPrice < formattedRegularPrice ? 'product-regular-price mr-2 line-through text-sm text-white font-normal' : 'bg-blue text-white py-1 px-2 rounded'
+            strikeThroughClass: formattedSalesPrice < formattedRegularPrice ? 'product-regular-price mr-2 line-through text-sm text-gray-600 font-normal' : ''
         }
     }
 
     const productMeta = discountPercent( regularPrice, salesPrice );
 
     return (
-        <h6 className="product-price text-gray-800 font-semibold  mt-3 mb-3 text-center">
+        <h6 className="product-price text-gray-800 font-semibold mr-3 mb-5">
             {/* Regular price */}
             { productMeta?.discountPercent ? <span className="product-price mr-2">{salesPrice}</span> : null }
 
             {/* Discounted price */}
-            <span className={productMeta?.strikeThroughClass }>{ regularPrice}</span>
+            <span className={productMeta?.strikeThroughClass}>{ regularPrice }</span>
 
             {/* Discount percent */}
-            <span className="product-discount text-green-600 font-bold text-sm block">{productMeta?.discountPercent}</span>
+            <span className="product-discount text-green-600 font-bold text-sm font-normal">{productMeta?.discountPercent}</span>
         </h6>
     )
 }
