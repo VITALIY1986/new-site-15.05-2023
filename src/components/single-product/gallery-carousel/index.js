@@ -46,7 +46,7 @@ const GalleryCarousel = ({gallery}) => {
     };
 
     return (
-        <div className="banner flex flex-col sm:flex-row justify-between overflow-hidden md:mr-4">
+        <div className="banner flex flex-col sm:flex-row justify-between overflow-hidden ">
             <div className="banner-img w-full relative h-gallerysm">
                 {
                     gallery.map( ( item, index ) => {

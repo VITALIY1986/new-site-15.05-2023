@@ -19,10 +19,7 @@ const Layout = (props) => {
    
    
         <div className="wrapper">
-          <Head>
-    
-            <title>4Prof </title>
-          </Head>
+          
           <Header />
         
           {props.children}

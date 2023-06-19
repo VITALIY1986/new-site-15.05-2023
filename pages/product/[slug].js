@@ -68,13 +68,13 @@ const result = amount/interest;
                     </div>
                     <Price salesPrice={product?.price} regularPrice={product?.regularPrice}/>
                            {/* <Price salesPrice={product?.price } regularPrice={product?.regularPrice}/>*/}
-                           <div className="mt-3">
-							<AddToCartButton className="mt-3"    product={ product }/>
+                           <div className="mt-3 mb-10">
+							<AddToCartButton className="mt-3 "    product={ product }/>
                             </div>
                             <div
 className="singl_product_description mb-5 mt-3 "
 								dangerouslySetInnerHTML={ {
-									__html: product.description,
+									__html: product.shortDescription,
 								} }
 							
 							/>
