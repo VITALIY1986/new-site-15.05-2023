@@ -20,7 +20,7 @@ module.exports =   {
     },
     webpack5: true,
     /**
-     * We specify which domains are allowed to be optimized.
+     * We specify which domains are allowed to be optimzed.
      * This is needed to ensure that external urls can't be abused.
      * @see https://nextjs.org/docs/basic-features/image-optimization#domains
      */
