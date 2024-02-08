@@ -425,65 +425,7 @@ button:focus-visible {
 }
 
 
-.faq {
-  width: 100%;
- 
 
-  &__title {
-    margin: 0;
-    padding-bottom: 25px;
-  }
-
-  &__question {
-   
-    width: 100%;
-    border-bottom: 1px solid $light-grayish-blue;
-  }
-
-  &__question-button {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    border: none;
-    background-color: transparent;
-    padding: 0px;
-    cursor: pointer;
-
-    padding-top: 18px;
-    padding-bottom: 18px;
-
-    &::after {
-    
-      margin-right: 17px;
-      transform: rotate(90deg);
-    }
-
-    &:hover {
-      color: rgb(52, 52, 52);
-      font-weight: bold;
-    }
-  }
-
-  &__desc {
-  
-    padding-right: 17px;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 300ms ease-out;
-  }
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  color: $light-grayish-blue;
-  padding-top: 10px;
-}
-.attribution a {
-  color: $soft-violet;
-}
 
 
 
@@ -751,3 +693,97 @@ animation: radial-anakausug 1s infinite;
    
   100% { box-shadow: 0 0 0 40px rgba(255, 0, 0, 0); }
   }
+
+
+
+
+
+
+
+  .faqq {
+    width: 100%;
+   
+  
+    &__title {
+      margin: 0;
+      padding-bottom: 25px;
+    }
+  
+    &__question {
+     
+      width: 100%;
+      border-bottom: 1px solid $light-grayish-blue;
+    }
+  
+    &__question-buttonn {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      border: none;
+      background-color: transparent;
+      padding: 0px;
+      cursor: pointer;
+  
+      padding-top: 18px;
+      padding-bottom: 18px;
+  
+      &::after {
+      
+        margin-right: 17px;
+        transform: rotate(90deg);
+      }
+  
+      &:hover {
+        color: rgb(52, 52, 52);
+        font-weight: bold;
+      }
+    }
+  
+    &__descc {
+    
+      padding-right: 17px;
+      margin-top: 0;
+      margin-bottom: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 300ms ease-out;
+    }
+  }
+  
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: $light-grayish-blue;
+    padding-top: 10px;
+  }
+  .attribution a {
+    color: $soft-violet;
+  }
+  
+  .faqq__descc.show-descriptionn {
+   
+    
+   max-height: 1000px;
+    margin-bottom: 15px;
+  }
+  
+  /* Arrow*/
+  
+  /* closed */
+  .faqq__question-buttonn::after {
+    transition: transform 300ms ease-out;
+  }
+  
+  /* open */
+  .font-weight-bold::after {
+    transform: rotate(720deg);
+  }
+  
+  .active-color{
+    color:red;
+  }
+  .futshadow{
+    filter: drop-shadow(0px 0px 4px  rgb(25, 25, 25));
+  }
+  
+  

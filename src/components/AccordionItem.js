@@ -9,13 +9,13 @@ const AccordionItem = ({
   index,
   onClick,
 }) => (
-  <div className="faq__question" key={item.question}>
+  <div className="faq__questionn" key={item.question}>
     <dt>
       <button
         aria-expanded={ariaExpanded}
-        aria-controls={`faq${index + 1}_desc`}
-        data-qa="faq__question-button"
-        className={`faq__question-button text-xl ${fontWeightBold}`}
+        aria-controls={`faqq${index + 1}_descc`}
+        data-qa="faqq__question-buttonn"
+        className={`faqq__question-buttonn text-xl ${fontWeightBold}`}
         onClick={onClick}
       >
         {item.question}
@@ -23,9 +23,9 @@ const AccordionItem = ({
     </dt>
     <dd>
       <p
-        id={`faq${index + 1}_desc`}
-        data-qa="faq__desc"
-        className={`faq__desc ${showDescription}`}
+        id={`faqq${index + 1}_descc`}
+        data-qa="faqq__descc"
+        className={`faqq__descc ${showDescription}`}
       >
         {item.answer}
       </p>
