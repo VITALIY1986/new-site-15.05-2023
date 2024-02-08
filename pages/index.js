@@ -18,11 +18,15 @@ import Head from "next/head"
 import AliceCarousel from 'react-alice-carousel';
 import Navigation from "../src/components/navigation-chantarelle";
 import categoryStripe from "../public/pattern_chant.jpg"
+import categoryRanfors from "../public/ranforse.jpg"
+import categoryBiz from "../public/biz.jpg"
+import categoryChildren from "../public/children.jpg"
 import Telegram from "../public/telegram.png"
 import 'react-alice-carousel/lib/alice-carousel.css';
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { Autoplay } from 'swiper/modules';
 export default function Home (props) {
 	
 	const { isLoggedIn } = useAuth();
@@ -132,15 +136,20 @@ export default function Home (props) {
 				
 				
 				<Swiper
+				  autoplay={{
+					delay: 2500,
+					disableOnInteraction: false,
+				  }}
+				  modules={[Autoplay]}
       spaceBetween={30}
       slidesPerView={2}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З РАНФОРСУ</h3></SwiperSlide>
-      <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З РАНФОРСУ</h3></SwiperSlide>
-	  <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З РАНФОРСУ</h3></SwiperSlide>
-	  <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З РАНФОРСУ</h3></SwiperSlide>
+      <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З САТИНУ</h3></SwiperSlide>
+      <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryRanfors}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З РАНФОРСУ</h3></SwiperSlide>
+	  <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryBiz}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З БЯЗІ</h3></SwiperSlide>
+	  <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryChildren}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">ДИТЯЧІ</h3></SwiperSlide>
    
     </Swiper>
 			
