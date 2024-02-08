@@ -9,6 +9,16 @@ export const PRODUCT_BY_SLUG_QUERY = gql` query Product($slug: ID!) {
 	  description
 	  shortDescription
 	  sku
+	  attributes(first: 10) {
+		nodes {
+		  name
+		  options
+		}
+	  }
+	  seo {
+		title
+		metaDesc
+	  }
 	  galleryImages {
           nodes {
             id

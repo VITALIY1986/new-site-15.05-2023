@@ -1,11 +1,9 @@
 
-
-
 const path = require("path");
 const allowedImageWordPressDomain = new URL(process.env.NEXT_PUBLIC_WORDPRESS_URL).hostname
 
 module.exports =   {
-    
+ 
    
     webpackDevMiddleware: (config) => {
         config.watchOptions = {
@@ -20,11 +18,11 @@ module.exports =   {
     },
     webpack5: true,
     /**
-     * We specify which domains are allowed to be optimzed.
+     * We specify which domains are allowed to be optimize.
      * This is needed to ensure that external urls can't be abused.
      * @see https://nextjs.org/docs/basic-features/image-optimization#domains
      */
     images: {
-        domains: [ allowedImageWordPressDomain, 'www.4prof.com.ua' ],
+        domains: [ allowedImageWordPressDomain, 'www.lux-tex.com.ro' ],
     },
 };

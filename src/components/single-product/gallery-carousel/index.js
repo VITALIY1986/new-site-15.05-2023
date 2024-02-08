@@ -47,7 +47,7 @@ const GalleryCarousel = ({gallery}) => {
 
     return (
         <div className="banner flex flex-col sm:flex-row justify-between overflow-hidden ">
-            <div className="banner-img w-full relative h-gallerysm">
+            <div className="banner-img w-full relative sm:h-gallerysm h-galleryxsm">
                 {
                     gallery.map( ( item, index ) => {
                         const opacity = ( activeIndex === index || 1 === gallery.length ) ? 'opacity-100' : 'opacity-0';
@@ -67,14 +67,16 @@ const GalleryCarousel = ({gallery}) => {
                         )
                     })
                 }
+                <div className='slider-content'>
                 <div className="slider-button ">
-                    <button className="focus:outline-none" onClick={nextSlide}>
-                        <svg width="25px" className="inline-block mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" /></svg>
+                    <button className="focus:outline-none button-slider" onClick={nextSlide}>
+                        <svg width="25px" className="inline-block " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" /></svg>
                     </button>
-                    <button className="focus:outline-none" onClick={nextSlide}>
+                    <button className="focus:outline-none button-slider" onClick={nextSlide}>
                         <svg width="25px" className="inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                     </button>
                 </div>
+            </div>
             </div>
         </div>
     )
