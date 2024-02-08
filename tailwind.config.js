@@ -11,7 +11,8 @@ module.exports = {
       './pages/**/*.js'],
     theme: {
       fontSize: {
-        sm: '0.6rem',
+        pers:'0.6rem',
+        sm: '0.8rem',
         base: '1rem',
         xl: '1.25rem',
         '2xl': '1.563rem',
@@ -36,7 +37,7 @@ module.exports = {
           current: 'currentColor',
           blue: {
            
-            DEFAULT: '#e44244',
+            DEFAULT: '#790000',
             
           },
           purple: {

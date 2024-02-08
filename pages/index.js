@@ -195,10 +195,11 @@ export default function Home (props) {
 			</div>
 				{/*Prodduts*/ }
 				<div className="mb-10">
-					<h1 className="text-5xl  lg:text-6xl font-bold mb-10">Постільна білизна від виробника LUXTEX</h1>
-					
+					<h1 className="text-5xl  lg:text-6xl font-bold mb-10 leading-normal">Постільна білизна від виробника LUXTEX</h1>
+					<div className="text-justify">
 					<p>Якість сну напряму впливає на нашу якість життя, а постільна білизна від виробника LUXTEX може допомогти покращити якість вашого сну, так як ми являємося експертами в нашій галузі понад 20 років, ми відшиваємо продукцію тільки з власних тканин тому відповідаємо за якість. Наші комплекти постільної білизни виготовлені з високоякісних матеріалів та з увагою до деталей, що дозволяє нам створювати товари найвищої якості. Ми пропонуємо різноманіття дизайнів та кольорів, щоб кожен міг знайти комплект, який підходить саме йому.</p>
 				<p>Окрім естетичної складової, постільна білизна від виробника LUXTEX також має високі показники зносостійкості та зберігання форми після прання. Наша білизна може забезпечити комфортну температуру в ліжку протягом всієї ночі, тому що ми використовуємо тканини з відповідною плотністю, які регулюють теплообмін.</p>
+				</div>
 				<h2 className="text-4xl  lg:text-5xl font-bold mb-10 mt-8">Розміри комплектів постільної білизни - підбір підодіяльника, наволочки та простені на резинці</h2>
 				<div className="text-justify">
 				 <p>
@@ -209,36 +210,36 @@ export default function Home (props) {
     <table className="size-full text-center border-4 border-gray-900" style={{ height: '171px', width: '100%' }} >
       <thead >
         <tr>
-          <th className=" border border-gray-400 text-sm">розмір</th>
-          <th className="border border-gray-400 text-sm">підодіяльник</th>
-          <th className="border border-gray-400 text-sm">простирадло</th>
-          <th className="border border-gray-400 text-sm">наволочка</th>
+          <th className=" border border-gray-400 text-pers lg:text-base">розмір</th>
+          <th className="border border-gray-400 text-pers lg:text-base">підодіяльник</th>
+          <th className="border border-gray-400 text-pers lg:text-base">простирадло</th>
+          <th className="border border-gray-400 text-pers lg:text-base">наволочка</th>
         </tr>
       </thead>
       <tbody>
         <tr >
-          <td className=" border border-gray-400 text-sm">полуторний</td>
-          <td className=" border border-gray-400 text-sm">150*210</td>
-          <td className=" border border-gray-400 text-sm">150*210</td>
-          <td className=" border border-gray-400 text-sm">70*70/50*70(1шт.)</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">полуторний</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">150*210</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">150*210</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">70*70/50*70(1шт.)</td>
         </tr>
         <tr>
-          <td className=" border border-gray-400 text-sm">двоспальний</td>
-          <td className=" border border-gray-400 text-sm">180*210</td>
-          <td className=" border border-gray-400 text-sm">200*220</td>
-          <td className=" border border-gray-400 text-sm">70*70/50*70(2шт.)</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">двоспальний</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">180*210</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">200*220</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">70*70/50*70(2шт.)</td>
         </tr>
         <tr>
-          <td className=" border border-gray-400 text-sm">євростандарт</td>
-          <td className=" border border-gray-400 text-sm">200*220</td>
-          <td className=" border border-gray-400 text-sm">220*220</td>
-          <td className=" border border-gray-400 text-sm">70*70/50*70(2шт.)</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">євростандарт</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">200*220</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">220*220</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">70*70/50*70(2шт.)</td>
         </tr>
         <tr>
-          <td className=" border border-gray-400 text-sm">сімейний</td>
-          <td className=" border border-gray-400 text-sm">150*210(2шт.)</td>
-          <td className=" border border-gray-400 text-sm">220*220</td>
-          <td className=" border border-gray-400 text-sm">70*70/50*70(2шт.)</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">сімейний</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">150*210(2шт.)</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">220*220</td>
+          <td className=" border border-gray-400 text-pers lg:text-base">70*70/50*70(2шт.)</td>
         </tr>
       </tbody>
     </table>
