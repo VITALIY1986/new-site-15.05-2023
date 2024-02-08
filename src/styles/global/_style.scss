@@ -99,7 +99,7 @@ $text: #414141;
 }
 
 .drawer-list {
-  background: #eccaca;
+  
   z-index: 100;
   position: fixed;
   right: 0;
@@ -450,7 +450,7 @@ $dark-grayish-blue: hsl(240, 6%, 50%);
 $light-grayish-blue: hsl(240, 5%, 91%);
 .show-description {
   color: white;
-  background: #800000;
+  background: #292929;
   height:2.5rem;
   margin-bottom: 0px;
   display: block;
@@ -462,7 +462,9 @@ $light-grayish-blue: hsl(240, 5%, 91%);
 .faq__question-button::after {
   transition: transform 300ms ease-out;
 }
-
+.faq__question-button{
+  color:white;
+}
 /* open */
 .font-weight-bold::after {
   transform: rotate(720deg);

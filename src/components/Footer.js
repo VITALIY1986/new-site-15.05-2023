@@ -8,19 +8,19 @@ const Footer = () => (
 					<h3 className="mt-5 text-3xl text-white">НАШІ КОМПАНІЇ</h3>
 					<div className=" flex mt-5 ">
 						<div className="flex-1 opacity-75 " >
-					     <p className="mb-3">Chantarelle</p>
-					     <p className="mb-3">Norel</p>
-					     <p className="mb-3">Dermaoxy</p>
+					     <p className="mb-3">З БЯЗІ</p>
+					     <p className="mb-3">З РАНФОРСУ</p>
+					     <p className="mb-3">З САТИНУ</p>
 						 </div>
 						 <div className="flex-1 opacity-75">
-					     <p className="mb-3">Arkana</p>
-					     <p className="mb-3">Beyond Dental </p>
-					     <p className="mb-3">Sittara</p>
+					     <p className="mb-3">ДИТЯЧІ</p>
+					     <p className="mb-3">ТЕКСТИЛЬ </p>
+					     <p className="mb-3">ІНФОРМАЦІЯ</p>
 						 </div>
 					</div>
 			    </div>
 				<div className="col-start-4 col-end-6 ">
-					<h3 className="mt-5 text-3xl text-blue ">КОНТАКТИ</h3>
+					<h3 className="mt-5 text-3xl text-white ">КОНТАКТИ</h3>
 					<div className="mt-5 opacity-75 ">
 						<p>Mенеджер (Київ): +38 (097) 860 06 06 </p>
 						<p>Mенеджер (Київ): +38 (068) 706 70 67 </p>
@@ -31,12 +31,12 @@ const Footer = () => (
 					</div>
 				</div>
 				<div className="col-start-6 col-end-6">
-				     <h3 className="mt-5 text-3xl text-blue">МИ В СОЦ.МЕРЕЖАХ</h3>
+				     <h3 className="mt-5 text-3xl text-white">МИ В СОЦ.МЕРЕЖАХ</h3>
 				     <ul className="social-links flex  mt-5 ">
-				        <li><a href="https://www.facebook.com/4ProfUkraine" className="" target="_blank"><Facebook/></a></li>
+				        <li><a href="/" className="" target="_blank"><Facebook/></a></li>
 				        
-				        <li className="ml-2 mt-1"><a href="https://www.youtube.com/channel/UC3BBKd1UUUtXMjY4uL_NZ4g" className="fa fa-youtube" target="_blank"><Youtube/></a></li>
-				        <li className="ml-2"><a href="https://www.instagram.com/4profukraine/" className="fa fa-instagram" target="_blank"><Instagram/></a></li>
+				        <li className="ml-2 mt-1"><a href="/" className="fa fa-youtube" target="_blank"><Youtube/></a></li>
+				        <li className="ml-2"><a href="/" className="fa fa-instagram" target="_blank"><Instagram/></a></li>
 			        </ul>
 			   </div>
 			</div>
