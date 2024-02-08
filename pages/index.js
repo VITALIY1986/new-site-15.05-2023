@@ -109,7 +109,7 @@ export default function Home (props) {
 	</Head>
 
 			<Layout>
-	<div className="main">
+	<div className="main ">
 				{/*Hero Carousel*/}
 				<HeroCarousel heroCarousel={heroCarousel}/>
 				
@@ -125,7 +125,8 @@ export default function Home (props) {
 			
 			
 			
-			<div className="px-4">
+			<div className="products container mx-auto my-10  ">
+					<h2 className="products-main-title main-title mb-10  text-center text-5xl  lg:text-6xl font-bold">Категорії</h2>
 				<div className="products container mx-auto   ">
 
 				
@@ -154,7 +155,24 @@ export default function Home (props) {
 				</div>*/ }
 					{/*Star*/ }
 			
-					<div className="products container mx-auto mt-20  ">
+		
+					
+				{/*Products*/ }
+				<div className="products container mx-auto my-10  ">
+					<h2 className="products-main-title main-title mb-10  text-center text-5xl  lg:text-6xl font-bold">Новинки</h2>
+					<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+					{ featuredproducts.length ? (
+							featuredproducts.map( product => <ProductHome key={ product.id } isLoggedIn={isLoggedIn} product={ product }/> )
+						) : '' }
+					</div>
+				</div>
+
+
+
+
+
+
+				<div className="products container mx-auto mt-20  ">
 				<h2 className="products-main-title main-title mb-5 text-5xl  lg:text-6xl text-center  font-bold">Dragi clienți Luxtex!</h2>
 				
 				<div className="flex justify-center items-center flex-col lg:flex-row">
@@ -175,16 +193,6 @@ export default function Home (props) {
 			
 		
 			</div>
-					
-				{/*Products*/ }
-				<div className="products container mx-auto my-10  ">
-					<h2 className="products-main-title main-title mb-10  text-center text-5xl  lg:text-6xl font-bold">Новинки</h2>
-					<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
-					{ featuredproducts.length ? (
-							featuredproducts.map( product => <ProductHome key={ product.id } isLoggedIn={isLoggedIn} product={ product }/> )
-						) : '' }
-					</div>
-				</div>
 				{/*Prodduts*/ }
 				<div className="mb-10">
 					<h1 className="text-5xl  lg:text-6xl font-bold mb-10">Lenjerie de pat de calitate, Premium și de lux - Descoperă cea mai bună lenjerie de pat la Luxtex</h1>

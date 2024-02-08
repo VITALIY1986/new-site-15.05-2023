@@ -6,8 +6,17 @@ import {DEFAULT_PRODUCT_HOME_IMG_URL} from "../constants/urls";
 
 const Product = ( props ) => {
 	const { product,isLoggedIn } = props;
-	
-	
+	const regular = product?.regularPrice/2;
+	const re = product?.regularPrice ;
+	const regula = +re + +regular;
+	const login = product?.regularPrice;
+	const rar = isLoggedIn ? login :  regula  ;  
+const par = Number(rar);
+const  procent =  (product?.regularPrice - product?.price) /  product?.regularPrice * 100;
+
+const amount = par - product?.price;
+const interest = par/100;
+const result = amount/interest;
 
 
 
@@ -18,10 +27,10 @@ const Product = ( props ) => {
 	return (
 		// @TODO Need to hndle Group products differently.
 		undefined !== product && 'GroupProduct' !== product.__typename ? (
-			<div className="product mb-5  hover:shadow relative">
+			<div className="product mb-5   relative bg-white p-2 rounded-sm">
 
-{ product.featured  ? <div className="bg-blue rounded absolute right-2 top-2 z-10 text-white p-2">NEW</div>: ''}
-{/* product?.salePrice  ? <div className={`${ isLoggedIn ? 'block bg-red-200 rounded absolute left-2 top-2 z-10 text-white p-2' : 'block bg-red-200 rounded absolute left-2 top-2 z-10 text-white p-2' }`}>{ result.toFixed(0)}%OFF</div> : ''*/}
+
+
 				<Link href={ `/product/${ product?.slug }`} >
 					<a>
 						<Image
@@ -36,18 +45,12 @@ const Product = ( props ) => {
 					</a>
 					
 				</Link>
-				<div className="text-center  ">{product.sku}</div>
-				<div className="product-info text-center p-2 md:p-5">
-					<h3 className="product-title mt-3 font-medium text-gray-800 overflow-hidden ">
-						{ product.name ? product.name : '' }
-					</h3>
+				<div className="mt-3 text-center pl-2 md:pl-3 font-semibold text-text_title text-lg uppercase">{product.name}</div>
+				<div className="product-info text-center pl-2 md:pl-3">
+					
 				
-					{/*{product?.regularPrice }/////{product?.salePrice }/////{product?.price}*/}
-                 {/*}   {product?.salePrice ?  <div className="">  <strike className="mr-1 text-red-200">₴{par.toFixed(2)}</strike>₴{product?.price}</div> :   <div className="">₴{par.toFixed(2)}</div>}*/}
-				 <Price salesPrice={product?.price} regularPrice={product?.regularPrice}/>
-				{/*	{product?.salePrice  ?  <div className={`${ isLoggedIn ? 'block' : 'hidden ' }`}> ₴{par.toFixed(4)}</div> :   ''}*/}
-				{/*	<div className="product-description text-sm text-gray-700 " dangerouslySetInnerHTML={{ __html: (product?.description)}}/>*/}
-			{/*	<Price salesPrice={product?.price} regularPrice={product?.regularPrice}/>*/}
+				 {product?.salePrice   ?  <div className='mt-3 flex flex-col'>  <strike className=" text-red-200 text-xl ">{product?.regularPrice}<span ></span></strike><span className=' text-2xl bg-white rounded-full   text-text_title'>{product?.price}  </span></div> :   <div className=" text-2xl text-text_title">{product?.price }<span className='ml-2'></span></div>}
+				
 					<AddToCartButton product={ product } />
 				</div>
 

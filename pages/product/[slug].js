@@ -78,7 +78,7 @@ const ress  =  <table className="mt-2 w-full">
                         
                
                    
-                        {product?.salePrice   ?  <div className='block mt-4'>  <strike className=" text-red-200 text-2xl ">{product?.regularPrice}<span ></span></strike><span className='ml-3 text-2xl bg-white rounded-full px-6 py-1 text-gray-500'>{product?.price}  </span></div> :   <div className=" text-2xl">{product?.price }<span className='ml-2'>lei</span></div>}
+                        {product?.salePrice   ?  <div className='block mt-4'>  <strike className=" text-red-200 text-2xl ">{product?.regularPrice}<span ></span></strike><span className='ml-3 text-2xl bg-white rounded-full px-6 py-1 text-gray-500'>{product?.price}  </span></div> :   <div className=" text-2xl">{product?.price }<span className='ml-2'></span></div>}
                        {/* <Price salesPrice={product?.price } regularPrice={product?.regularPrice}/>*/}
                        <div className="mt-3 mb-10">
                         <AddToCartButton className="mt-3 "    product={ product }/>

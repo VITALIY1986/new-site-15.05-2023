@@ -39,7 +39,7 @@ const Price = ({ regularPrice = 0, salesPrice }) => {
             <span className={productMeta?.strikeThroughClass}>{ regularPrice }</span>
 
             {/* Discount percent */}
-            <span className="product-discount text-green-600 font-bold text-sm font-normal">{productMeta?.discountPercent}</span>
+            <span className="product-discount text-green-600 font-bold text-sm ">{productMeta?.discountPercent}</span>
         </h6>
     )
 }
