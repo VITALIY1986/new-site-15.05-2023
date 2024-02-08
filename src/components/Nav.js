@@ -14,52 +14,74 @@ const Nav = () => {
 			
 	  {
 		id: 2,
-		  title: "СHANTARELLE",
-		linkhome:"/categori-chantarelle-home",
+		  title: "З БЯЗІ",
+		  subone:"півтораспальні",
+		  subtwo:"двоспальний",
+		  subevro:"євро",
+		  subfamily:"сімейний",
+		linkhome:"/",
 		linkprof:"",
-		linkarticle:"/posts/chantarelle",
-		linkhomepage:"/chantarelle"
+		linkarticle:"/",
+		linkhomepage:"/"
 	  },
 	  {
 		id: 3,
-		  title: "ARKANA",
-		  linkhome:"/categori-arkana-home",
-		  linkprof:"",
-		  linkarticle:"/posts/arkana",
-		  linkhomepage:"/arkana"
+		title: "З РАНФОРСУ",
+		subone:"півтораспальні",
+		subtwo:"двоспальний",
+		subevro:"євро",
+		subfamily:"сімейний",
+	  linkhome:"/",
+	  linkprof:"",
+	  linkarticle:"/",
+	  linkhomepage:"/"
 	  },
 	  {
 		id:4,
-		  title: "NOREL",
-		  linkhome:"/categori-norel-home",
-		  linkprof:"",
-		  linkarticle:"/posts/norel",
-		  linkhomepage:"/norel"
+		  title: "З САТИНУ",
+		  subone:"півтораспальні",
+		  subtwo:"двоспальний",
+		  subevro:"євро",
+		  subfamily:"сімейний",
+		linkhome:"/",
+		linkprof:"",
+		linkarticle:"/",
+		linkhomepage:"/"
 	  },
 	  {
 		id:5,
-		  title: "MCCM",
-		  linkhome:"",
-		  linkprof:"",
-		  linkarticle:"/posts/mccm",
-		  linkhomepage:"/mccm"
+		  title: "ДИТЯЧІ",
+		  subone:"півтораспальні",
+		
+		linkhome:"/",
+		linkprof:"",
+		linkarticle:"/",
+		linkhomepage:"/"
 	  },
 	  {
 		id: 6,
-		  title: "DermaOxy",
-		  linkhome:"/categori-dermaoxy-home",
-		  linkprof:"",
-		  linkarticle:"",
-		  linkhomepage:"/dermaoxy"
+		  title: "ТЕКСТИЛЬ",
+		  subone:"простирадла на резинці",
+		  subtwo:"Покривала",
+		  subevro:"Рушники",
+		  subfamily:"Текстиль для готелів",
+		linkhome:"/",
+		linkprof:"",
+		linkarticle:"/",
+		linkhomepage:"/"
 	  },
 	  
 	  {
 		id: 7,
-		  title: "Sittara",
-		  linkhome:"",
-		  linkprof:"",
-		  linkarticle:"/posts/sittara",
-		  linkhomepage:"/sittara",
+		title: "ІНФОРМАЦІЯ",
+		subone:"ДОСТАВКА І ОПЛАТА",
+		subtwo:"ОБМІН ТА ПОВЕРНЕННЯ",
+		subevro:"ПРО НАС",
+	
+	  linkhome:"/",
+	  linkprof:"",
+	  linkarticle:"/",
+	  linkhomepage:"/"
 		
 	  },
 	  {
@@ -68,7 +90,7 @@ const Nav = () => {
 		  linkhome:"",
 		  linkprof:"",
 		  linkarticle:"",
-		  linkhomepage:"/contacts",
+		  linkhomepage:"",
 		  item:""
 	  }
 	
@@ -76,64 +98,86 @@ const Nav = () => {
 	const questionsAnswersLog = [
 			
 		{
-		  id: 2,
-			title: "СHANTARELLE",
-		  linkhome:"/categori-chantarelle-home",
-		  linkprof:"/categori-chantarelle-prof",
-		  linkarticle:"/posts/chantarelle",
-		  linkhomepage:"/chantarelle"
-		},
-		{
-		  id: 3,
-			title: "ARKANA",
-			linkhome:"/categori-arkana-home",
-			linkprof:"/categori-arkana-prof",
-			linkarticle:"/posts/arkana",
-			linkhomepage:"/arkana"
-		},
-		{
-		  id:4,
-			title: "NOREL",
-			linkhome:"/categori-norel-home",
-			linkprof:"/categori-norel-prof",
-			linkarticle:"/posts/norel",
-			linkhomepage:"/norel"
-		},
-		{
-		  id:5,
-			title: "MCCM",
-			linkhome:"",
-			linkprof:"/categori-mccm-prof",
-			linkarticle:"/posts/mccm",
-			linkhomepage:"/mccm"
-		},
-		{
-		  id: 6,
-			title: "DermaOxy",
-			linkhome:"/categori-dermaoxy-home",
-			linkprof:"/categori-dermaoxy-prof",
-			linkarticle:"",
-			linkhomepage:"/dermaoxy"
-		},
-		
-		{
-		  id: 7,
-			title: "Sittara",
-			linkhome:"",
+			id: 2,
+			  title: "З БЯЗІ",
+			  subone:"півтораспальні",
+			  subtwo:"двоспальний",
+			  subevro:"євро",
+			  subfamily:"сімейний",
+			linkhome:"/",
 			linkprof:"",
-			linkarticle:"/posts/sittara",
-			linkhomepage:"/",
-		
-		},
-		{
-		  id: 8,
-			title: "Контакти",
-			linkhome:"",
+			linkarticle:"/",
+			linkhomepage:"/"
+		  },
+		  {
+			id: 3,
+			title: "З РАНФОРСУ",
+			subone:"півтораспальні",
+			subtwo:"двоспальний",
+			subevro:"євро",
+			subfamily:"сімейний",
+		  linkhome:"/",
+		  linkprof:"",
+		  linkarticle:"/",
+		  linkhomepage:"/"
+		  },
+		  {
+			id:4,
+			  title: "З САТИНУ",
+			  subone:"півтораспальні",
+			  subtwo:"двоспальний",
+			  subevro:"євро",
+			  subfamily:"сімейний",
+			linkhome:"/",
 			linkprof:"",
-			linkarticle:"",
-			linkhomepage:"/contacts",
-			item:""
-		}
+			linkarticle:"/",
+			linkhomepage:"/"
+		  },
+		  {
+			id:5,
+			  title: "ДИТЯЧІ",
+			  subone:"півтораспальні",
+			
+			linkhome:"/",
+			linkprof:"",
+			linkarticle:"/",
+			linkhomepage:"/"
+		  },
+		  {
+			id: 6,
+			  title: "ТЕКСТИЛЬ",
+			  subone:"простирадла на резинці",
+			  subtwo:"Покривала",
+			  subevro:"Рушники",
+			  subfamily:"Текстиль для готелів",
+			linkhome:"/",
+			linkprof:"",
+			linkarticle:"/",
+			linkhomepage:"/"
+		  },
+		  
+		  {
+			id: 7,
+			title: "ІНФОРМАЦІЯ",
+			subone:"ДОСТАВКА І ОПЛАТА",
+			subtwo:"ОБМІН ТА ПОВЕРНЕННЯ",
+			subevro:"ПРО НАС",
+		
+		  linkhome:"/",
+		  linkprof:"",
+		  linkarticle:"/",
+		  linkhomepage:"/"
+			
+		  },
+		  {
+			id: 8,
+			  title: "Контакти",
+			  linkhome:"",
+			  linkprof:"",
+			  linkarticle:"",
+			  linkhomepage:"",
+			  item:""
+		  }
 	  
 	  ];
 	const Data = isLoggedIn ? questionsAnswersLog : questionsAnswers
@@ -163,27 +207,33 @@ const Nav = () => {
         data-qa="faq__desc"
         className="">
 						<li className="block">
-						<Link href={item.linkhomepage	}>
+						{item.subone && item.subone !== "" && (		<Link href={item.linkhomepage	}>
 								<a className={`hidden ${showDescription}`}>
-								{item.title	} HOME
+								{item.subone}
 								</a>
-							</Link>
+							</Link>)}
 						<Link href={item.linkprof	}>
 								<a className={`${ item.linkprof === "" ? 'hidden' : `hidden ${showDescription}`}`}>
-								Професійна косметика
+								{item.subtwo}
 								</a>
 							</Link>
+							{item.subtwo && item.subtwo !== "" && (
 							<Link href={item.linkhome	}>
 								<a className={`${ item.linkhome === "" ? 'hidden' : `hidden ${showDescription}`}`}>
-								Домашня косметика
+								{item.subtwo}
 								</a>
-							</Link>
-							
+							</Link>)}
+							{item.subevro && item.subevro !== "" && (
 							<Link  href={item.linkarticle	}>
 								<a className={`${ item.linkarticle === "" ? 'hidden' : `hidden ${showDescription}`}`} >
-								Статті
+							{item.subevro}
 								</a>
-							</Link>
+							</Link>)}
+							{item.subfamily && item.subfamily !== "" && (		<Link  href={item.linkarticle	}>
+								<a className={`${ item.linkarticle === "" ? 'hidden' : `hidden ${showDescription}`}`} >
+							{item.subfamily}
+								</a>
+							</Link>)}
 						</li>
 						
 						
@@ -213,7 +263,7 @@ const Nav = () => {
 							<li>
 							    <Link href={item.linkprof	}>
 						            <a className={`${ item.linkprof=== "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white '}`}>
-									Професійна косметика
+								{item.subone}
 									
 						            </a>
 					            </Link>
@@ -221,7 +271,7 @@ const Nav = () => {
 							<li> 
 								<Link href={item.linkhome	}>
 						            <a className={`${ item.linkhome=== "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white '}`}>
-						            Домашня косметика
+									{item.subone}
 								
 						            </a>
 					            </Link>
@@ -230,10 +280,29 @@ const Nav = () => {
 								<Link href={item.linkarticle	}>
 						            <a className={`${ item.linkarticle === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white  '}`}>
 						            
-									Статті
+									{item.subtwo}
+						            </a>
+					            </Link>
+							
+							</li>
+							<li> 
+							
+								<Link href={item.linkarticle	}>
+						            <a className={`${ item.linkarticle === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white  '}`}>
+						            
+									{item.subevro}
 						            </a>
 					            </Link>
 							</li>
+							<li> 
+							
+							<Link href={item.linkarticle	}>
+								<a className={`${ item.linkarticle === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white  '}`}>
+								
+								{item.subfamily}
+								</a>
+							</Link>
+						</li>
 							
 						</ul>
 						</li>
