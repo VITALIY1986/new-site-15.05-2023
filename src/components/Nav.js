@@ -86,7 +86,7 @@ const Nav = () => {
 	  },
 	  {
 		id: 8,
-		  title: "Контакти",
+		title: "ККОНТАКТИ",
 		  linkhome:"",
 		  linkprof:"",
 		  linkarticle:"",
@@ -171,7 +171,7 @@ const Nav = () => {
 		  },
 		  {
 			id: 8,
-			  title: "Контакти",
+			  title: "ККОНТАКТИ",
 			  linkhome:"",
 			  linkprof:"",
 			  linkarticle:"",
