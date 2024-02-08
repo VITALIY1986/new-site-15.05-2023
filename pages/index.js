@@ -132,15 +132,15 @@ export default function Home (props) {
 				
 				
 				<Swiper
-      spaceBetween={50}
-      slidesPerView={3}
+      spaceBetween={30}
+      slidesPerView={2}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide ><Image   height={1000}width={1000} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З РАНФОРСУ</h3></SwiperSlide>
-      <SwiperSlide ><Image   height={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З РАНФОРСУ</h3></SwiperSlide>
-	  <SwiperSlide ><Image   height={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З РАНФОРСУ</h3></SwiperSlide>
-	  <SwiperSlide ><Image   height={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З РАНФОРСУ</h3></SwiperSlide>
+      <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З РАНФОРСУ</h3></SwiperSlide>
+      <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З РАНФОРСУ</h3></SwiperSlide>
+	  <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З РАНФОРСУ</h3></SwiperSlide>
+	  <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З РАНФОРСУ</h3></SwiperSlide>
    
     </Swiper>
 			
