@@ -202,14 +202,14 @@ export default function Home (props) {
 				<h2 className="text-4xl  lg:text-5xl font-bold mb-10 mt-8">Розміри комплектів постільної білизни - підбір підодіяльника, наволочки та простені на резинці</h2>
 				<p>Постільна білизна яку пропонує компанія LUXTEX виготовлена в різних розмірах , що дає змогу підібрати потрібний комплект відповідного розміру для вашого ліжка : півтора, двоспальний, євро та сімейний. Нижче показана таблиця розмірів - де ви можете підібрати не тільки розмір постільної білизни, а й відповідні розміри для - підодіяльника, наволочки, та простені на резинці за бажанням. Дана таблиця опублікована на сторінці кожного товару для зручності користування сайтом</p>
 				<h2 className="text-4xl  lg:text-5xl font-bold mb-10 mt-8">Таблиця розмірів</h2>
-				(
-    <table style={{ height: '171px' }} width="336">
-      <thead>
+				
+    <table className="size-full text-center border-4" style={{ height: '171px', width: '336' }} >
+      <thead >
         <tr>
-          <th>розмір</th>
-          <th>підодіяльник</th>
-          <th>простирадло</th>
-          <th>наволочка</th>
+          <th className=" border border-indigo-500">розмір</th>
+          <th className="border border-indigo-500">підодіяльник</th>
+          <th className="border border-indigo-500">простирадло</th>
+          <th className="border border-indigo-500">наволочка</th>
         </tr>
       </thead>
       <tbody>
