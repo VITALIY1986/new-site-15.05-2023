@@ -125,7 +125,7 @@ export default function Home (props) {
 			
 			
 			
-			<div className="products container mx-auto my-10  ">
+			<div className="products container mx-auto px-4 my-10  ">
 					<h2 className="products-main-title main-title mb-10  text-center text-5xl  lg:text-6xl font-bold">Категорії</h2>
 				<div className="products container mx-auto   ">
 
@@ -195,14 +195,50 @@ export default function Home (props) {
 			</div>
 				{/*Prodduts*/ }
 				<div className="mb-10">
-					<h1 className="text-5xl  lg:text-6xl font-bold mb-10">Lenjerie de pat de calitate, Premium și de lux - Descoperă cea mai bună lenjerie de pat la Luxtex</h1>
+					<h1 className="text-5xl  lg:text-6xl font-bold mb-10">Постільна білизна від виробника LUXTEX</h1>
 					
-					<p>Bine ați venit la Luxtex, destinația dumneavoastră de încredere pentru lenjeria de pat de cea mai înaltă calitate, cu un nivel Premium și luxuriant. Suntem mândri să vă oferim o gamă largă de lenjerii de pat, create cu atenție și atenție la detalii, pentru a vă oferi cea mai bună experiență de odihnă și confort.</p>
-				<p>Indiferent dacă căutați o lenjerie de pat de calitate superioară, un design exclusiv sau materiale luxuriante, Luxtex vă întâmpină cu o selecție impresionantă. De la seturi de lenjerii de pat din bumbac moale și respirabil, până la lenjerii de pat din mătase fină sau satin delicat, veți găsi opțiuni care se potrivesc stilului și preferințelor dumneavoastră.</p>
-				<p>Calitatea și durabilitatea sunt principii de bază pentru Luxtex. Utilizăm materiale premium și tehnici de fabricație de înaltă calitate pentru a vă oferi lenjerii de pat care rezistă în timp și oferă o senzație plăcută la atingere. Fiecare detaliu este atent studiat, de la cusături precise până la finisaje impecabile, pentru a vă asigura că aveți parte de produse de cea mai înaltă calitate.</p>
-				<p>Experimentați confortul și rafinamentul pe care îl oferă lenjeriile de pat de lux de la Luxtex. Fie că doriți să transformați dormitorul într-un sanctuar de relaxare sau căutați o notă elegantă și sofisticată, gama noastră variată de modele și culori vă permite să alegeți ceea ce se potrivește cel mai bine stilului dumneavoastră.</p>
-				<p>Calitatea superioară, luxul și atenția la detalii sunt caracteristicile care ne definesc. Încrederea clienților noștri este prioritatea noastră, de aceea ne străduim să oferim numai produse excepționale și servicii impecabile.</p>
-				<p>Descoperiți cea mai bună lenjerie de pat la Luxtex și transformați dormitorul într-un spațiu de relaxare și rafinament. Vă așteptăm cu o selecție deosebită de lenjerii de pat de calitate superioară, Premium și de lux, care să vă ofere confortul și satisfacția deplină.</p>
+					<p>Якість сну напряму впливає на нашу якість життя, а постільна білизна від виробника LUXTEX може допомогти покращити якість вашого сну, так як ми являємося експертами в нашій галузі понад 20 років, ми відшиваємо продукцію тільки з власних тканин тому відповідаємо за якість. Наші комплекти постільної білизни виготовлені з високоякісних матеріалів та з увагою до деталей, що дозволяє нам створювати товари найвищої якості. Ми пропонуємо різноманіття дизайнів та кольорів, щоб кожен міг знайти комплект, який підходить саме йому.</p>
+				<p>Окрім естетичної складової, постільна білизна від виробника LUXTEX також має високі показники зносостійкості та зберігання форми після прання. Наша білизна може забезпечити комфортну температуру в ліжку протягом всієї ночі, тому що ми використовуємо тканини з відповідною плотністю, які регулюють теплообмін.</p>
+				<h2 className="text-4xl  lg:text-5xl font-bold mb-10 mt-8">Розміри комплектів постільної білизни - підбір підодіяльника, наволочки та простені на резинці</h2>
+				<p>Постільна білизна яку пропонує компанія LUXTEX виготовлена в різних розмірах , що дає змогу підібрати потрібний комплект відповідного розміру для вашого ліжка : півтора, двоспальний, євро та сімейний. Нижче показана таблиця розмірів - де ви можете підібрати не тільки розмір постільної білизни, а й відповідні розміри для - підодіяльника, наволочки, та простені на резинці за бажанням. Дана таблиця опублікована на сторінці кожного товару для зручності користування сайтом</p>
+				<h2 className="text-4xl  lg:text-5xl font-bold mb-10 mt-8">Таблиця розмірів</h2>
+				(
+    <table style={{ height: '171px' }} width="336">
+      <thead>
+        <tr>
+          <th>розмір</th>
+          <th>підодіяльник</th>
+          <th>простирадло</th>
+          <th>наволочка</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>полуторний</td>
+          <td>150*210</td>
+          <td>150*210</td>
+          <td>70*70/50*70(1шт.)</td>
+        </tr>
+        <tr>
+          <td>двоспальний</td>
+          <td>180*210</td>
+          <td>200*220</td>
+          <td>70*70/50*70(2шт.)</td>
+        </tr>
+        <tr>
+          <td>євростандарт</td>
+          <td>200*220</td>
+          <td>220*220</td>
+          <td>70*70/50*70(2шт.)</td>
+        </tr>
+        <tr>
+          <td>сімейний</td>
+          <td>150*210(2шт.)</td>
+          <td>220*220</td>
+          <td>70*70/50*70(2шт.)</td>
+        </tr>
+      </tbody>
+    </table>
 				</div>
 				</div>
 				</div>
