@@ -91,14 +91,14 @@ const AddToCart = (props) => {
                         {'opacity-50 cursor-not-allowed': addToCartLoading}
                     )}
                 >
-					{ addToCartLoading ? 'se încarcă...' : 'Adaugă în coș' }
+					{ addToCartLoading ? 'se încarcă...' : 'В КОШИК' }
                 </button>
                 
             }
             {showViewCart ? (
                 <Link href="/cart">
                     <button
-                        className="px-4 py-4    text-sm border-solid border border-current  bg-bottons inline-block hover:bg-bottons_hover text-white absolute top-5 right-4 duration-700 rounded-full uppercase"> coș
+                        className="px-4 py-4    text-sm border-solid border border-current  bg-bottons inline-block hover:bg-bottons_hover text-white absolute top-5 right-4 duration-700 rounded-full uppercase"> Кошик
                      
                     </button>
                 </Link>
