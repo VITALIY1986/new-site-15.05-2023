@@ -1,7 +1,7 @@
 import { isEmpty, isArray } from 'lodash';
 import Link from "next/link";
 import {useState, useEffect, useRef} from 'react';
-import Sale from '../../../../public/sale.png'
+
 import Image from 'next/image'
 const HeroCarousel = ({heroCarousel}) => {
 
@@ -58,35 +58,32 @@ const HeroCarousel = ({heroCarousel}) => {
 
     return (
         <>
-        <div className="banner   relative  m-auto slidervh">
+        <div className="banner   relative  m-auto slidervh slider-color">
           
                 {
                     heroCarousel.map( ( item, index ) => {
                         const opacity = ( activeIndex === index || 1 === heroCarousel.length ) ? 'opacity-100 transition duration-500 ease-in-out' : 'opacity-0 transition duration-500 ease-in-out';
                         return (
+                            <>
+                            <div class="marquee  font-playfair font-bold "><span>{heroCarousel[activeIndex]?.name} </span></div>
                             <div key={item?.id}className={`${opacity} solid_corection banner-img-container absolute top-0 left-0 bottom-0 transition duration-500 ease-in-out  w-full slidervh overflow-hidden`}>
                                 <img className={`h-full w-full object-cover`}
                                     src={item?.image?.sourceUrl} srcSet={item?.image?.srcSet} loading="lazy"    width="1000"
                                     height="500"
                                 />
+                              
                             </div>
+                            </>
                         )
                     })
                 }
-            {/*}    <div className="slider-button">
-                    <button className="focus:outline-none" onClick={nextSlide}>
-                        <svg width="25px" className="inline-block mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" /></svg>
-                    </button>
-                    <button className="focus:outline-none" onClick={nextSlide}>
-                        <svg width="25px" className="inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-                    </button>
-            </div>*/}
-            <div className='absolute left-10 md:left-auto md:right-10 top-10 '><Image className='rotate_animation' width={150} height={150} src={Sale}  /><div className='absolute top-2/4 left-2/4  text-white text-4xl transform-sale'><p >-25%</p></div></div>
-            <div className="banner-content py-3  px-10  absolute z-10 bottom-20 lg:bottom-40 lg:left-12">
-                <h2 className="banner-content__title text-5xl md:text-7xl  text-white font-playfair font-bold mb-4">{heroCarousel[activeIndex]?.name}</h2>
-                <p className="banner-content__description text-2xl md:text-5xl text-white bg-yellov  inline-block">{heroCarousel[activeIndex]?.description}</p>
- <Link href={`/category/${heroCarousel[activeIndex]?.slug}/`}>
-                    <a className="banner-content__link block"><button className='bg-red-500 mt-10 py-4 px-20 lg:px-20 lg:py-5 rounded-full text-white'>Cataloge</button></a>
+          
+          
+            <div className="banner-content pb-20  px-2 w-full absolute z-10 bottom-0   whitespace-normal overflow-ellipsis text-center">
+                <h2 className="overflow-ellipsis banner-content__title text-4xl md:text-6xl  text-white font-playfair font-bold mb-3">{heroCarousel[activeIndex]?.name}</h2>
+                <p className="overflow-ellipsis banner-content__description text-2xl md:text-5xl text-white bg-yellov  inline-block">{heroCarousel[activeIndex]?.description}</p>
+ <Link href={`/produs/${heroCarousel[activeIndex]?.slug}/`}>
+                    <a className="banner-content__link block"><button className='inset-shadow mt-6 py-4 px-20 lg:px-20 lg:py-5 rounded-full uppercase'>Cataloge</button></a>
             </Link>
             </div></div>
       </>

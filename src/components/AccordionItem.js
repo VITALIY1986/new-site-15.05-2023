@@ -4,31 +4,32 @@ const AccordionItem = ({
   showDescription,
   ariaExpanded,
   fontWeightBold,
+  colorActive,
   item,
   index,
   onClick,
 }) => (
-  <div className="faq__question" key={item.title}>
-    <div>
+  <div className="faq__question" key={item.question}>
+    <dt>
       <button
         aria-expanded={ariaExpanded}
         aria-controls={`faq${index + 1}_desc`}
         data-qa="faq__question-button"
-        className={`faq__question-button ${fontWeightBold}`}
+        className={`faq__question-button text-xl ${fontWeightBold}`}
         onClick={onClick}
       >
-        {item.title}
+        {item.question}
       </button>
-    </div>
-    <div>
+    </dt>
+    <dd>
       <p
         id={`faq${index + 1}_desc`}
         data-qa="faq__desc"
         className={`faq__desc ${showDescription}`}
       >
-        {item.title}
+        {item.answer}
       </p>
-    </div>
+    </dd>
   </div>
 );
 
