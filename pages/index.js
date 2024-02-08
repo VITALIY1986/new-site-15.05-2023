@@ -21,7 +21,7 @@ import categoryStripe from "../public/pattern_chant.jpg"
 import categoryRanfors from "../public/ranforse.jpg"
 import categoryBiz from "../public/biz.jpg"
 import categoryChildren from "../public/children.jpg"
-import Telegram from "../public/telegram.png"
+import Telegram from "../public/vb.png"
 import 'react-alice-carousel/lib/alice-carousel.css';
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -108,7 +108,7 @@ export default function Home (props) {
 	return (
 		<>
 	<Head>
-<title>Lenjerie de pat de calitate, Premium și de lux - Descoperă cea mai bună lenjerie de pat</title>
+<title>Постільна білизна від виробника LUXTEX</title>
 
 	</Head>
 
@@ -187,15 +187,19 @@ export default function Home (props) {
 
 
 				<div className="products container mx-auto mt-20  ">
-				<h2 className="products-main-title main-title mb-5 text-5xl  lg:text-6xl text-center  font-bold">Dragi clienți Luxtex!</h2>
+				<h2 className="products-main-title main-title mb-5 text-5xl  lg:text-6xl text-center  font-bold">Приэднуйтеся до нашої Viber групи для ексклюзивних пропозицій та оновлень! </h2>
 				
 				<div className="flex justify-center items-center flex-col lg:flex-row">
 					<div className="w-full lg:w-6/12 m-3  relative ">
 					
-						<p className="text-justify mb-3">Doriți să fiți la curent cu toate evenimentele din compania noastră? Doriți să primiți informații despre produsele noi, promoții și reduceri în 
-							fiecare lună? Atunci alăturați-vă grupului nostru de Telegram prin intermediul codului QR!</p>
-							<p className="mb-3 text-justify">Dacă întâmpinați probleme în conectarea sau scanarea codului QR, vă rugăm să contactați operatorul nostru în acest chat. Vă vom ajuta cu plăcere să vă alăturați grupului nostru de Telegram.</p>
-							<p className="">Vă mulțumim că ați ales Luxtex!</p>
+						<p className="text-justify mb-3"><strong>Шановні любителі затишку та комфорту! </strong>
+						Запрошуємо вас приєднатися до нашої Viber групи, де ви отримуватимете першими інформацію про нові колекції постільної білизни та текстилю, а також спеціальні акційні пропозиції! 
+						
+						
+						Не пропустіть можливість бути в курсі всіх наших пропозицій та насолоджуватися комфортом разом з нами! </p>
+							
+						<div><strong>	Приєднуйтеся за посиланям нижче:</strong></div>
+							<a href=" https://invite.viber.com/?g=Jzq36PUtHFBHc7yo6PwO9LwZE1xOid_3"><button className="bg-indigo-600 text-white px-5 py-3 mt-3 rounded-lg">Приєднатися</button></a>
 					</div>
 					<div onClick={handleDownload} className="w-full lg:w-6/12 m-3  relative "><Image       src={Telegram}  />
 						
