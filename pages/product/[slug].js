@@ -6,7 +6,8 @@ import {PRODUCT_BY_SLUG_QUERY, PRODUCT_SLUGS} from '../../src/queries/product-by
 import { isEmpty } from 'lodash';
 import Accordion from "../../src/components/Accordion";
 import GalleryCarousel from "../../src/components/single-product/gallery-carousel";
-
+import Image from 'next/image'
+import Star from "../../public/star.png"
 import Head from "next/head"
 export default function Product(props) {
 	const { product } = props;
@@ -82,6 +83,8 @@ const ress  =  <table className="mt-2 w-full">
                        {/* <Price salesPrice={product?.price } regularPrice={product?.regularPrice}/>*/}
                        <div className="mt-3 mb-10">
                         <AddToCartButton className="mt-3 "    product={ product }/>
+                        <div className='pt-4'>
+                     <Image   height={100} width={100} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={Star}  /> </div>
                         </div>
                         <div
 className="singl_product_description mb-5 mt-3 "
@@ -93,7 +96,7 @@ className="singl_product_description mb-5 mt-3 "
             <div class="border border-gray-200"></div>
                         <div className='mt-3'>
                      <span>SKU:</span>   <span className='text-gray-400   '>{product.sku}</span>
-                       
+                  
                 </div>
                     </div>
                 </div>

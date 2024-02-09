@@ -7,7 +7,7 @@ const Accordion = (props) => {
   const questionsAnswers = [
     
     {
-      question: "Descriere",
+      question: "Опис",
       answer:
       <div
       className="singl_product_description mb-5 mt-10 "
@@ -18,7 +18,7 @@ const Accordion = (props) => {
                     />,
     },
     {
-      question: "Informații suplimentare",
+      question: "Додаткова інформація",
       answer:dess
      
     },

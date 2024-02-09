@@ -22,12 +22,10 @@ const Footer = () => (
 				<div className="col-start-4 col-end-6 ">
 					<h3 className="mt-5 text-3xl text-white ">КОНТАКТИ</h3>
 					<div className="mt-5 opacity-75 ">
-						<p>Mенеджер (Київ): +38 (097) 860 06 06 </p>
-						<p>Mенеджер (Київ): +38 (068) 706 70 67 </p>
-						<p>Mенеджер (регіони): +38 (097) 209 54 45</p>
-						<p>Mенеджер (Beyond): +38 (067) 328-74-26</p>
-						<p>м. Київ, провулок Західний 3Ц </p>
-						<p>info@4prof.com.ua</p>
+						<p>Mенеджер: +38 (066) 422 77 56 </p>
+						<p>Mенеджер  +38 (050) 541 42 21 </p>
+						<p>м. Чернівці, вулиця Головна 265 "ТЦ DEPO't" </p>
+						<p>lluxtex@gmail.com</p>
 					</div>
 				</div>
 				<div className="col-start-6 col-end-6">

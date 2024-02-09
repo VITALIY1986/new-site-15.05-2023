@@ -721,9 +721,9 @@ animation: radial-anakausug 1s infinite;
       width: 100%;
       display: flex;
       justify-content: space-between;
-      border: none;
-      background-color: transparent;
-      padding: 0px;
+      border: 0.5px solid rgb(255, 130, 130);
+padding:10px 20px;
+     
       cursor: pointer;
   
       padding-top: 18px;
