@@ -7,21 +7,21 @@ const Footer = () => (
 				<div className="col-start-1 col-end-4 ">
 					<h3 className="mt-5 text-3xl text-white">НАШ ТЕКСТИЛЬ</h3>
 					<div className=" flex mt-5 ">
-						<div className="flex-1 opacity-75 " >
-					     <p className="mb-3">З БЯЗІ</p>
-					     <p className="mb-3">З РАНФОРСУ</p>
-					     <p className="mb-3">З САТИНУ</p>
+						<div className="flex-1  " >
+					     <p className="mb-3"><a href={`/category/${'postilna-bilyzna-z-byazi'}`}>З БЯЗІ</a></p>
+					     <p className="mb-3"><a href={`/category/${'postilna-bilyzna-ranfors'}`}>З РАНФОРСУ</a></p>
+					     <p className="mb-3"><a href={`/category/${'postilna-bilyzna-strayp-satyn'}`}>З САТИНУ</a></p>
 						 </div>
-						 <div className="flex-1 opacity-75">
-					     <p className="mb-3">ДИТЯЧІ</p>
-					     <p className="mb-3">ТЕКСТИЛЬ </p>
-					     <p className="mb-3">ІНФОРМАЦІЯ</p>
+						 <div className="flex-1 ">
+					     <p className="mb-3"><a href={`/category/${'dytyacha-postilna-bilyzna'}`}>ДИТЯЧІ</a></p>
+					     <p className="mb-3"><a href={`/category/${'kovdry-ta-podushky'}`}>ТЕКСТИЛЬ </a></p>
+					     
 						 </div>
 					</div>
 			    </div>
 				<div className="col-start-4 col-end-6 ">
 					<h3 className="mt-5 text-3xl text-white ">КОНТАКТИ</h3>
-					<div className="mt-5 opacity-75 ">
+					<div className="mt-5  ">
 						<p>Mенеджер: +38 (066) 422 77 56 </p>
 						<p>Mенеджер  +38 (050) 541 42 21 </p>
 						<p>м. Чернівці, вулиця Головна 265 "ТЦ DEPO't" </p>

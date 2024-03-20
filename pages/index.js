@@ -27,6 +27,7 @@ import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
+import ParentCategoryBlock from "../src/components/category/category-block/ParentCategoryBlock";
 export default function Home (props) {
 	
 	const { isLoggedIn } = useAuth();
@@ -87,7 +88,7 @@ export default function Home (props) {
 		  }
 	]
 	
-	const { products,  heroCarousel, posts, postsCategory,featuredproducts,news ,ret} = props || {};
+	const { products,  heroCarousel, posts,productCategories,featuredproducts,news ,ret} = props || {};
 
 	const responsive = {
 		0: { items: 1 },
@@ -121,11 +122,8 @@ export default function Home (props) {
 			
 				{/*<a href="myfile.pdf"  download>Download</a>*/}
 			
-				{/*Categories
-				<div className="product-categories-container container mx-auto my-32 px-4 xl:px-0">
-					<h2 className="mai-title text-3xl text-center mb-5 uppercase"><span className="main-title-inner">Categories</span></h2>
-					<ParentCategoriesBlock productCategories={ productCategories }/>
-</div>*/ }
+			
+				    
 			
 			
 			
@@ -146,11 +144,19 @@ export default function Home (props) {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryStripe}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З САТИНУ</h3></SwiperSlide>
-      <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryRanfors}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З РАНФОРСУ</h3></SwiperSlide>
-	  <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryBiz}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">З БЯЗІ</h3></SwiperSlide>
-	  <SwiperSlide ><Image   height={900} width={900} className="rounded-lg" objectPosition="center center" fill={true} objectFit={'cover'} src={categoryChildren}  /> <h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">ДИТЯЧІ</h3></SwiperSlide>
-   
+			{ productCategories.length ? (
+							productCategories
+							.filter(category => category.slug !== "par-landing")
+							.filter(category => category.slug !== "uncategorized")
+							.filter(category => category.slug !== "vitamine-minerale")
+							.filter(category => category.slug !== "advertising-package")
+							.filter(category => category.slug !== "offers")
+							.filter(category => category.slug !== "aloe-vera-pacheta-3-1")
+							.filter(category => category.slug !== "pachete-promotionale")
+							.filter(category => category.slug !== "pachet-frumusete-si-stare-de-bine")
+							.map( category => <SwiperSlide >	<ParentCategoryBlock category={ category }/></SwiperSlide> )
+	  ) : '' }
+  
     </Swiper>
 			
 			

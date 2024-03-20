@@ -11,24 +11,26 @@ const ParentCategoryBlock = ( props ) => {
     }
 	else {
  return (
-		<div className="product mb-5">
+		
 			<Link href={`/category/${category?.slug}`}>
 				<a>
 					<Image
-						className="object-cover "
+					height={900} width={900}
+					objectPosition="center center" fill={true} objectFit={'cover'}
+						className=" rounded-lg"
 						layout="fill"
 						containerClassNames="h-80 md:h-96 "
 						sourceUrl={ category?.image?.sourceUrl ?? '' }
 						defaultImgUrl={DEFAULT_CATEGORY_IMG_URL}
 						altText={category?.image?.altText ?? category.slug}
+						alt={category?.name}
 					/>
-					<div className="product-title-container p-3">
-						<h3 className="product-title text-lg font-medium text-white bg-gradient-to-r from-blue ... p-3">{category?.name}</h3>
 					
-					</div>
+					<h3 className="absolute top-2 left-2 text-white bg-black px-2 py-1 rounded-lg">{category?.name}</h3>
+					
 				</a>
 			</Link>
-		</div>
+		
 	);}
 }
 
