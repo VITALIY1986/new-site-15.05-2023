@@ -128,6 +128,7 @@ $text: #414141;
     pointer-events: auto;
   }
   li {
+    text-align: center;
     display: block;
    list-style: none;
     text-transform: uppercase;
@@ -140,7 +141,7 @@ $text: #414141;
     &:last-child {
       
     }
-    a {
+    .drawer {
       text-decoration: none;
    
       text-align: center;
@@ -169,7 +170,7 @@ input.hamburger {
         li {
           transform: translatex(0);
           @include transition;
-          a {
+          .drawer {
             padding-right: 15px;
           }
         }

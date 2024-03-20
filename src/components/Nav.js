@@ -34,7 +34,7 @@ const Nav = () => {
 	  linkhome:"/",
 	  linkprof:"",
 	  linkarticle:"/",
-	  linkhomepage:"/category/${'postilna-bilyzna-ranfors'}"
+	
 	  },
 	  {
 		id:4,
@@ -46,7 +46,7 @@ const Nav = () => {
 		linkhome:"/",
 		linkprof:"",
 		linkarticle:"/",
-		linkhomepage:"/category/${'postilna-bilyzna-strayp-satyn'}"
+		
 	  },
 	  {
 		id:5,
@@ -56,7 +56,7 @@ const Nav = () => {
 		linkhome:"/",
 		linkprof:"",
 		linkarticle:"/",
-		linkhomepage:"/category/${'dytyacha-postilna-bilyzna'}"
+	
 	  },
 	  {
 		id: 6,
@@ -68,7 +68,7 @@ const Nav = () => {
 		linkhome:"/",
 		linkprof:"",
 		linkarticle:"/",
-		linkhomepage:"/category/${'kovdry-ta-podushky'}"
+		
 	  },
 	  
 	  {
@@ -81,7 +81,7 @@ const Nav = () => {
 	  linkhome:"/",
 	  linkprof:"",
 	  linkarticle:"/",
-	  linkhomepage:"/category/${'kovdry-ta-podushky'}"
+	 
 		
 	  },
 	  {
@@ -90,9 +90,9 @@ const Nav = () => {
 		  linkhome:"",
 		  linkprof:"",
 		  linkarticle:"",
-		  linkhomepage:"",
+		
 		  item:"",
-		  linkhomepage:"/category/${'kovdry-ta-podushky'}"
+		
 	  }
 	
 	];
@@ -108,7 +108,7 @@ const Nav = () => {
 			linkhome:"/",
 			linkprof:"",
 			linkarticle:"/",
-			linkhomepage:"/category/${'postilna-bilyzna-z-byazi'}"
+		
 		  },
 		  {
 			id: 3,
@@ -120,7 +120,7 @@ const Nav = () => {
 		  linkhome:"/",
 		  linkprof:"",
 		  linkarticle:"/",
-		  linkhomepage:"/category/${'postilna-bilyzna-ranfors'}"
+		
 		  },
 		  {
 			id:4,
@@ -132,7 +132,7 @@ const Nav = () => {
 			linkhome:"/",
 			linkprof:"",
 			linkarticle:"/",
-			linkhomepage:"/category/${'postilna-bilyzna-strayp-satyn'}"
+		
 		  },
 		  {
 			id:5,
@@ -142,7 +142,7 @@ const Nav = () => {
 			linkhome:"/",
 			linkprof:"",
 			linkarticle:"/",
-			linkhomepage:"/category/${'dytyacha-postilna-bilyzna'}"
+			
 		  },
 		  {
 			id: 6,
@@ -154,7 +154,7 @@ const Nav = () => {
 			linkhome:"/",
 			linkprof:"",
 			linkarticle:"/",
-			linkhomepage:"/category/${'kovdry-ta-podushky'}"
+			
 		  },
 		  
 		  {
@@ -167,7 +167,7 @@ const Nav = () => {
 		  linkhome:"/",
 		  linkprof:"",
 		  linkarticle:"/",
-		  linkhomepage:"/category/${'kovdry-ta-podushky'}"
+		
 			
 		  },
 		  {
@@ -176,9 +176,9 @@ const Nav = () => {
 			  linkhome:"",
 			  linkprof:"",
 			  linkarticle:"",
-			  linkhomepage:"",
+		
 			  item:"",
-			  linkhomepage:"/category/${'kovdry-ta-podushky'}"
+			  
 		  }
 	  
 	  ];
@@ -201,19 +201,19 @@ const Nav = () => {
 		onClick={() => {
 			setActiveIndex(index);
 		  }}>
-					<a className="block">
+					<div className="block drawer">
 					{item.title	}<span className="caret ml-6"></span>
-				</a>
+				</div>
 				
 					<ul id={`faq${index + 1}_desc`}
         data-qa="faq__desc"
         className="">
 						<li className="block">
-						{item.subone && item.subone !== "" && (		<Link href={item.linkhomepage	}>
-								<a className={`hidden ${showDescription}`}>
+						{item.subone && item.subone !== "" && (		
+								<div className={`hidden ${showDescription}`}>
 								{item.subone}
-								</a>
-							</Link>)}
+								</div>
+							)}
 						<Link href={item.linkprof	}>
 								<a className={`${ item.linkprof === "" ? 'hidden' : `hidden ${showDescription}`}`}>
 								{item.subtwo}
@@ -256,11 +256,11 @@ const Nav = () => {
 			
 			
 			<li className="nav-item relative   " key={item.id}>
-					<Link  href={item.linkhomepage}>
-						<a  className="block mt-4 lg:inline-block lg:mt-0 text-black hover:bg-blue hover:transition  delay-150 duration-300 ease-in-out ... hover:text-white transition-all cursor-pointer lead_hover px-3 py-5">
+					
+						<div  className="block mt-4 lg:inline-block lg:mt-0 text-black hover:bg-blue hover:transition  delay-150 duration-300 ease-in-out ... hover:text-white transition-all cursor-pointer lead_hover px-3 py-5">
 						{item.title	} <span className="caret"></span>
-						</a>
-						</Link>
+						</div>
+					
 						<ul className={`${ item.item === "" ? 'hidden' : 'dropdown-menus py-5 px-6 bg-blue mt-10  '}`}>
 							<li>
 							    <Link href={item.linkprof	}>

@@ -109,8 +109,8 @@ export default function Home (props) {
 	return (
 		<>
 	<Head>
-<title>Постільна білизна від виробника LUXTEX</title>
-
+    <title>Постільна білизна від виробника LUXTEX</title>
+	<meta name="description" content="Купуючи постільну білизну від виробника LUXTEX Ви отримаєтте гарантію якості!Відчуйте наші розкішні тканини!"/>
 	</Head>
 
 			<Layout>
