@@ -4,7 +4,10 @@ const allowedImageWordPressDomain = new URL(process.env.NEXT_PUBLIC_WORDPRESS_UR
 
 module.exports =   {
  
-   
+    i18n: {
+        locales: ['uk_UA'],
+        defaultLocale: 'uk_UA',
+      },
     webpackDevMiddleware: (config) => {
         config.watchOptions = {
             poll: 1000,
