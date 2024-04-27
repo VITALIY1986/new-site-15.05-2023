@@ -156,6 +156,7 @@ export default function Home (props) {
 							.filter(category => category.slug !== "aloe-vera-pacheta-3-1")
 							.filter(category => category.slug !== "pachete-promotionale")
 							.filter(category => category.slug !== "pachet-frumusete-si-stare-de-bine")
+							.filter(category => category.slug !== "slide1")
 							.map( category => <SwiperSlide >	<ParentCategoryBlock category={ category }/></SwiperSlide> )
 	  ) : '' }
   
@@ -180,12 +181,12 @@ export default function Home (props) {
 		
 					
 				{/*Products*/ }
-				<h2 className="products-main-title main-title mb-10 text-center text-5xl lg:text-6xl font-bold mt-11">Новинки</h2>
+	
 <div className="container mx-auto my-10 flex flex-col lg:flex-row">
     <div className="w-full lg:w-96 lg:sticky lg:top-10 mb-10  lg:mr-8"> {/* Adjust the width and margin-right as needed */}
         {/* Content of the sidebar goes here */}
         <div className="animated-background p-4 lg:mr-4"> {/* Additional right margin inside the sidebar on large screens if needed */}
-            <h3 className="font-bold text-lg mb-6 text-white">Обрати розмір постільної білизни</h3>
+            <h3 className="font-bold text-2xl text-center lg:text-left mb-6 text-white">Обрати розмір постільної білизни</h3>
             {productTags.length ? (
                 productTags.map(category => <ParentTagBlock category={category}/>)
             ) : ''}
@@ -220,7 +221,7 @@ export default function Home (props) {
 						Не пропустіть можливість бути в курсі всіх наших пропозицій та насолоджуватися комфортом разом з нами! </p>
 							
 						<div><strong>	Приєднуйтеся за посиланям нижче:</strong></div>
-							<a href=" https://invite.viber.com/?g=Jzq36PUtHFBHc7yo6PwO9LwZE1xOid_3"><button className="bg-indigo-600 text-white px-5 py-3 mt-3 rounded-lg">Приєднатися</button></a>
+							<a href=" https://invite.viber.com/?g=Jzq36PUtHFBHc7yo6PwO9LwZE1xOid_3"><button className="bg-indigo-600 text-white px-5 py-3 mt-6 rounded-full w-full lg:w-3/12">Приєднатися</button></a>
 					</div>
 					<div onClick={handleDownload} className="w-full lg:w-6/12 m-3  relative "><Image       src={Telegram}  />
 						
