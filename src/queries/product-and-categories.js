@@ -35,6 +35,14 @@ const PRODUCTS_AND_CATEGORIES_QUERY = gql`query {
       }
     }
   }
+  productTags(first: 30) {
+    nodes {
+      id
+      name
+      slug
+      
+    }
+  }
  news: category(id: "dGVybTox") {
     name
     posts(first: 30) {

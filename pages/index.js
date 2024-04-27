@@ -28,6 +28,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import ParentCategoryBlock from "../src/components/category/category-block/ParentCategoryBlock";
+import ParentTagBlock from "../src/components/category/category-block/ParentTagBlock";
 export default function Home (props) {
 	
 	const { isLoggedIn } = useAuth();
@@ -88,7 +89,7 @@ export default function Home (props) {
 		  }
 	]
 	
-	const { products,  heroCarousel, posts,productCategories,featuredproducts,news ,ret} = props || {};
+	const { products,  heroCarousel, posts,productCategories,featuredproducts,productTags} = props || {};
 
 	const responsive = {
 		0: { items: 1 },
@@ -161,7 +162,7 @@ export default function Home (props) {
     </Swiper>
 			
 			
-				
+	
 			
 		
 			</div>
@@ -179,14 +180,27 @@ export default function Home (props) {
 		
 					
 				{/*Products*/ }
-				<div className="products container mx-auto my-10  ">
-					<h2 className="products-main-title main-title mb-10  text-center text-5xl  lg:text-6xl font-bold">Новинки</h2>
-					<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
-					{ featuredproducts.length ? (
-							featuredproducts.map( product => <ProductHome key={ product.id } isLoggedIn={isLoggedIn} product={ product }/> )
-						) : '' }
-					</div>
-				</div>
+				<h2 className="products-main-title main-title mb-10 text-center text-5xl lg:text-6xl font-bold">Новинки</h2>
+<div className="container mx-auto my-10 flex flex-col lg:flex-row">
+    <div className="w-full lg:w-96 lg:sticky lg:top-10 mb-10  lg:mr-8"> {/* Adjust the width and margin-right as needed */}
+        {/* Content of the sidebar goes here */}
+        <div className="bg-gray-100 p-4 lg:mr-4"> {/* Additional right margin inside the sidebar on large screens if needed */}
+            <h3 className="font-bold text-lg mb-3">Sidebar Title</h3>
+            {productTags.length ? (
+                productTags.map(category => <ParentTagBlock category={category}/>)
+            ) : ''}
+        </div>
+    </div>
+    <div className="flex-grow">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+            {featuredproducts.length ? (
+                featuredproducts.map(product => <ProductHome key={product.id} isLoggedIn={isLoggedIn} product={product}/>)
+            ) : ''}
+        </div>
+    </div>
+</div>
+
+
 
 
 
@@ -315,6 +329,7 @@ export async function getStaticProps () {
 			postsCategory: data?.category ? data.category : [],
 			news: data?.news?.posts?.nodes ? data.news.posts.nodes : [],
 			productCategories: data?.productCategories?.nodes ? data.productCategories.nodes : [],
+			productTags: data?.productTags?.nodes ? data.productTags.nodes : [],
 			products: data?.products?.nodes ? data.products.nodes : [],
 			featuredproducts: data?.featuredproducts?.nodes ? data.featuredproducts.nodes : [],
 			heroCarousel: data?.heroCarousel?.nodes[0]?.children?.nodes ? data.heroCarousel.nodes[0].children.nodes : []
