@@ -199,7 +199,7 @@ export default function Home (props) {
 				<div className="flex justify-center items-center flex-col lg:flex-row">
 					<div className="w-full lg:w-6/12 m-3  relative ">
 					
-						<p className="text-justify mb-3"><strong>Шановні любителі затишку та комфорту! </strong>
+						<p className="text-justify mb-3"><strong> Шановні любителі затишку та комфорту! </strong>
 						Запрошуємо вас приєднатися до нашої Viber групи, де ви отримуватимете першими інформацію про нові колекції постільної білизни та текстилю, а також спеціальні акційні пропозиції! 
 						
 						
