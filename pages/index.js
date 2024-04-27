@@ -221,7 +221,7 @@ export default function Home (props) {
 						Не пропустіть можливість бути в курсі всіх наших пропозицій та насолоджуватися комфортом разом з нами! </p>
 							
 						<div><strong>	Приєднуйтеся за посиланям нижче:</strong></div>
-							<a href=" https://invite.viber.com/?g=Jzq36PUtHFBHc7yo6PwO9LwZE1xOid_3"><button className="bg-indigo-600 text-white px-5 py-3 mt-6 rounded-full w-full lg:w-3/12">Приєднатися</button></a>
+							<a href=" https://invite.viber.com/?g=Jzq36PUtHFBHc7yo6PwO9LwZE1xOid_3"><button className="bg-indigo-600 text-white px-5 py-5 mt-10 rounded-full w-full ">Приєднатися</button></a>
 					</div>
 					<div onClick={handleDownload} className="w-full lg:w-6/12 m-3  relative "><Image       src={Telegram}  />
 						

@@ -808,3 +808,14 @@ padding:10px 20px;
   background-size: 400% 400%;
   animation: gradientBG 2s ease infinite;
 }
+/* Assuming 'banner' is part of a larger stylesheet */
+.banner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Example: semi-transparent black overlay */
+  z-index: 1; /* Adjust z-index as needed, ensure it is above the main content if it's an overlay */
+}
