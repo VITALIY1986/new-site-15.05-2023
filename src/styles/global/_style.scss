@@ -789,4 +789,22 @@ padding:10px 20px;
     filter: drop-shadow(0px 0px 4px  rgb(25, 25, 25));
   }
   
-  
+  /* Animation.css */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-background {
+ 
+  background: linear-gradient(-45deg, #800000, #ffffff, #800000, #ffffff);
+  background-size: 400% 400%;
+  animation: gradientBG 2s ease infinite;
+}

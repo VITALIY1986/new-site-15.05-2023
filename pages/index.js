@@ -180,12 +180,12 @@ export default function Home (props) {
 		
 					
 				{/*Products*/ }
-				<h2 className="products-main-title main-title mb-10 text-center text-5xl lg:text-6xl font-bold">Новинки</h2>
+				<h2 className="products-main-title main-title mb-10 text-center text-5xl lg:text-6xl font-bold mt-11">Новинки</h2>
 <div className="container mx-auto my-10 flex flex-col lg:flex-row">
     <div className="w-full lg:w-96 lg:sticky lg:top-10 mb-10  lg:mr-8"> {/* Adjust the width and margin-right as needed */}
         {/* Content of the sidebar goes here */}
-        <div className="bg-gray-100 p-4 lg:mr-4"> {/* Additional right margin inside the sidebar on large screens if needed */}
-            <h3 className="font-bold text-lg mb-3">Sidebar Title</h3>
+        <div className="animated-background p-4 lg:mr-4"> {/* Additional right margin inside the sidebar on large screens if needed */}
+            <h3 className="font-bold text-lg mb-6 text-white">Обрати розмір постільної білизни</h3>
             {productTags.length ? (
                 productTags.map(category => <ParentTagBlock category={category}/>)
             ) : ''}
