@@ -68,11 +68,11 @@ const GalleryCarousel = ({gallery}) => {
                     })
                 }
                 <div className='slider-content'>
-                <div className="slider-button ">
-                    <button className="focus:outline-none button-slider" onClick={nextSlide}>
+                <div className="slider-buttons ">
+                    <button className="focus:outline-none button-sliders" onClick={nextSlide}>
                         <svg width="25px" className="inline-block " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" /></svg>
                     </button>
-                    <button className="focus:outline-none button-slider" onClick={nextSlide}>
+                    <button className="focus:outline-none button-sliders" onClick={nextSlide}>
                         <svg width="25px" className="inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                     </button>
                 </div>
