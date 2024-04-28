@@ -27,7 +27,7 @@ const ParentCategoryBlock = ( props ) => {
 						alt={category?.name}
 					/>
 					
-					<h3 className="absolute top-2 left-2 text-white bg-bottons px-2 py-1 rounded-lg">{category?.name}</h3>
+					<h3 className="absolute top-2 left-2 text-text_grey bg-bottons px-2 py-1 rounded-lg">{category?.name}</h3>
 					
 				</a>
 				</div>
