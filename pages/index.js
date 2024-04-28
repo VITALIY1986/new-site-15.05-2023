@@ -45,49 +45,7 @@ export default function Home (props) {
 	  link.click();
 	  document.body.removeChild(link);
 	};
-	const questionsAnswers = [
 	
-        {
-          id: 2,
-            title: "CHANTARELLE",
-            description: "Професійна і домашня косметика, косметологічні апарати (Франція, Польща)",
-            linkarticle:"/chantarelle"
-      
-        },
-        {
-          id: 3,
-            title: "ARKANA",
-            description: "Професійна і домашня косметика (Польща)",
-            linkarticle:"/arkana"
-        },
-        {
-          id: 4,
-            title: "NOREL Dr. Wilsz",
-            description: "Професійна і домашня косметика (Польща)",
-            linkarticle:"/norel"
-           
-        },
-		{
-			id: 2,
-			  title: "MCCM",
-			  description: "Одна з провідних компаній в індустрії краси",
-			  linkarticle:"/mccm"
-		
-		  },
-		  {
-			id: 3,
-			  title: "DERMAOXY",
-			  description: "апарат кисневої Безін'єкційної мезотерапії (Данія)",
-			  linkarticle:"/dermaoxy"
-		  },
-		  {
-			id: 4,
-			  title: "SITTARA",
-			  description: "Професійні косметологічні апарати",
-			  linkarticle:"/posts/chantarelle"
-			 
-		  }
-	]
 	
 	const { products,  heroCarousel, posts,productCategories,featuredproducts,productTags} = props || {};
 
@@ -115,7 +73,7 @@ export default function Home (props) {
 	<meta name="google-site-verification" content="LA_Al_18WMz2mdVTjsYF-niapRhXBYZuK3_sNMSzLK0" />
 	</Head>
 
-			<Layout>
+			<Layout productTags={productTags}>
 	<div className="main ">
 				{/*Hero Carousel*/}
 				<HeroCarousel heroCarousel={heroCarousel}/>

@@ -19,10 +19,11 @@ const Nav = () => {
 		  subtwo:"двоспальний",
 		  subevro:"євро",
 		  subfamily:"сімейний",
-		linkhome:"/",
-		linkprof:"",
-		linkarticle:"/",
-		linkhomepage:"/category/${'postilna-bilyzna-z-byazi'}"
+		linksubone:"https://lux-tex.com.ua/tag/biazi-pivtoraspalnyy",
+		linksubtwo:"https://lux-tex.com.ua/tag/biazi-dvospalnyy",
+		linksubevro:"https://lux-tex.com.ua/tag/biazi-evrostandart",
+		linksubfamily:"https://lux-tex.com.ua/tag/biazi-simeynyy",
+
 	  },
 	  {
 		id: 3,
@@ -31,9 +32,12 @@ const Nav = () => {
 		subtwo:"двоспальний",
 		subevro:"євро",
 		subfamily:"сімейний",
-	  linkhome:"/",
-	  linkprof:"",
-	  linkarticle:"/",
+	  linksubone:"https://lux-tex.com.ua/tag/ranfors-pivtoraspalnyy",
+	  linksubtwo:"https://lux-tex.com.ua/tag/ranfors-dvospalnyy",
+	  linksubevro:"https://lux-tex.com.ua/tag/ranfors-evrostandart",
+	  linksubfamily:"https://lux-tex.com.ua/tag/ranfors-simeynyy",
+
+	 
 	
 	  },
 	  {
@@ -43,9 +47,12 @@ const Nav = () => {
 		  subtwo:"двоспальний",
 		  subevro:"євро",
 		  subfamily:"сімейний",
-		linkhome:"/",
-		linkprof:"",
-		linkarticle:"/",
+		linksubone:"https://lux-tex.com.ua/tag/strayp-satyn-pivtoraspalnyy",
+		linksubtwo:"https://lux-tex.com.ua/tag/strayp-satyn-dvospalnyy",
+		linksubevro:"https://lux-tex.com.ua/tag/strayp-satyn-evrostandart",
+		linksubfamily:"https://lux-tex.com.ua/tag/strayp-satyn-simeynyy",
+
+	
 		
 	  },
 	  {
@@ -53,11 +60,26 @@ const Nav = () => {
 		  title: "ДИТЯЧІ",
 		  subone:"півтораспальні",
 		
-		linkhome:"/",
-		linkprof:"",
-		linkarticle:"/",
-	
+		linksubone:"https://lux-tex.com.ua/tag/dytyachi-polutornyy",
+		linksubtwo:"/",
+		linksubevro:"/",
+		
+		linksubfamily:"/",
 	  },
+	  {
+		id: 6,
+		  title: "ПРОСТИРАДЛА",
+		  subone:"Односпальне",
+		  subtwo:"Півтораспальне",
+		  subevro:"Двоспальне",
+		  subfamily:"Євростандарт",
+		linksubone:"https://lux-tex.com.ua/tag/prostyradlo-na-rezyntsi-odnospalne",
+		linksubtwo:"https://lux-tex.com.ua/tag/prostyradlo-na-rezyntsi-pivtoraspalne",
+		linksubevro:"https://lux-tex.com.ua/tag/prostyradlo-na-rezyntsi-dvospalne",
+		linksubfamily:"https://lux-tex.com.ua/tag/prostyradlo-na-rezyntsi-evrostandart",
+	  },
+	  
+	
 	  {
 		id: 6,
 		  title: "ТЕКСТИЛЬ",
@@ -65,124 +87,29 @@ const Nav = () => {
 		  subtwo:"Покривала",
 		  subevro:"Рушники",
 		  subfamily:"Текстиль для готелів",
-		linkhome:"/",
-		linkprof:"",
-		linkarticle:"/",
-		
+		linksubone:"/",
+		linksubtwo:".",
+		linksubevro:"/",
+		linksubfamily:"/",
 	  },
-	  
 	  {
 		id: 7,
 		title: "ІНФОРМАЦІЯ",
 		subone:"ДОСТАВКА І ОПЛАТА",
 		subtwo:"ОБМІН ТА ПОВЕРНЕННЯ",
 		subevro:"ПРО НАС",
-	
-	  linkhome:"/",
-	  linkprof:"",
-	  linkarticle:"/",
+		subfamily:"КОНТАКТИ",
+	  linksubone:"/",
+	  linksubtwo:"/",
+	  linksubevro:"/",
 	 
-		
+	  
+	  linksubfamily:"/",
 	  },
-	  {
-		id: 8,
-		title: "ККОНТАКТИ",
-		  linkhome:"",
-		  linkprof:"",
-		  linkarticle:"",
-		
-		  item:"",
-		
-	  }
 	
 	];
-	const questionsAnswersLog = [
-			
-		{
-			id: 2,
-			  title: "З БЯЗІ",
-			  subone:"півтораспальні",
-			  subtwo:"двоспальний",
-			  subevro:"євро",
-			  subfamily:"сімейний",
-			linkhome:"/",
-			linkprof:"",
-			linkarticle:"/",
-		
-		  },
-		  {
-			id: 3,
-			title: "З РАНФОРСУ",
-			subone:"півтораспальні",
-			subtwo:"двоспальний",
-			subevro:"євро",
-			subfamily:"сімейний",
-		  linkhome:"/",
-		  linkprof:"",
-		  linkarticle:"/",
-		
-		  },
-		  {
-			id:4,
-			  title: "З САТИНУ",
-			  subone:"півтораспальні",
-			  subtwo:"двоспальний",
-			  subevro:"євро",
-			  subfamily:"сімейний",
-			linkhome:"/",
-			linkprof:"",
-			linkarticle:"/",
-		
-		  },
-		  {
-			id:5,
-			  title: "ДИТЯЧІ",
-			  subone:"півтораспальні",
-			
-			linkhome:"/",
-			linkprof:"",
-			linkarticle:"/",
-			
-		  },
-		  {
-			id: 6,
-			  title: "ТЕКСТИЛЬ",
-			  subone:"простирадла на резинці",
-			  subtwo:"Покривала",
-			  subevro:"Рушники",
-			  subfamily:"Текстиль для готелів",
-			linkhome:"/",
-			linkprof:"",
-			linkarticle:"/",
-			
-		  },
-		  
-		  {
-			id: 7,
-			title: "ІНФОРМАЦІЯ",
-			subone:"ДОСТАВКА І ОПЛАТА",
-			subtwo:"ОБМІН ТА ПОВЕРНЕННЯ",
-			subevro:"ПРО НАС",
-		
-		  linkhome:"/",
-		  linkprof:"",
-		  linkarticle:"/",
-		
-			
-		  },
-		  {
-			id: 8,
-			  title: "ККОНТАКТИ",
-			  linkhome:"",
-			  linkprof:"",
-			  linkarticle:"",
-		
-			  item:"",
-			  
-		  }
-	  
-	  ];
-	const Data = isLoggedIn ? questionsAnswersLog : questionsAnswers
+	
+	const Data =  questionsAnswers
 	const renderedQuestionsAnswers = Data.map((item, index) => {
 		const showDescription = index === activeIndex ? "show-description" : "";
 		const fontWeightBold = index === activeIndex ? "font-light " : "";
@@ -209,30 +136,26 @@ const Nav = () => {
         data-qa="faq__desc"
         className="">
 						<li className="block">
-						{item.subone && item.subone !== "" && (		
-								<div className={`hidden ${showDescription}`}>
+						
+						<Link href={item.linksubone	}>
+								<a className={`${ item.linksubone === "" ? 'hidden' : `hidden ${showDescription}`}`}>
 								{item.subone}
-								</div>
-							)}
-						<Link href={item.linkprof	}>
-								<a className={`${ item.linkprof === "" ? 'hidden' : `hidden ${showDescription}`}`}>
-								{item.subtwo}
 								</a>
 							</Link>
 							{item.subtwo && item.subtwo !== "" && (
-							<Link href={item.linkhome	}>
-								<a className={`${ item.linkhome === "" ? 'hidden' : `hidden ${showDescription}`}`}>
+							<Link href={item.linksubtwo	}>
+								<a className={`${ item.linksubtwo === "" ? 'hidden' : `hidden ${showDescription}`}`}>
 								{item.subtwo}
 								</a>
 							</Link>)}
 							{item.subevro && item.subevro !== "" && (
-							<Link  href={item.linkarticle	}>
-								<a className={`${ item.linkarticle === "" ? 'hidden' : `hidden ${showDescription}`}`} >
+							<Link  href={item.linksubevro	}>
+								<a className={`${ item.linksubevro === "" ? 'hidden' : `hidden ${showDescription}`}`} >
 							{item.subevro}
 								</a>
 							</Link>)}
-							{item.subfamily && item.subfamily !== "" && (		<Link  href={item.linkarticle	}>
-								<a className={`${ item.linkarticle === "" ? 'hidden' : `hidden ${showDescription}`}`} >
+							{item.subfamily && item.subfamily !== "" && (		<Link  href={item.linksubfamily	}>
+								<a className={`${ item.linksubfamily === "" ? 'hidden' : `hidden ${showDescription}`}`} >
 							{item.subfamily}
 								</a>
 							</Link>)}
@@ -262,25 +185,18 @@ const Nav = () => {
 						</div>
 					
 						<ul className={`${ item.item === "" ? 'hidden' : 'dropdown-menus py-5 px-6 bg-blue mt-10  '}`}>
-							<li>
-							    <Link href={item.linkprof	}>
-						            <a className={`${ item.linkprof=== "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white '}`}>
-								{item.subone}
-									
-						            </a>
-					            </Link>
-							</li>
+							
 							<li> 
-								<Link href={item.linkhome	}>
-						            <a className={`${ item.linkhome=== "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white '}`}>
+								<Link href={item.linksubone	}>
+						            <a className={`${ item.linksubone=== "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white '}`}>
 									{item.subone}
 								
 						            </a>
 					            </Link>
 							</li>
 							<li> 
-								<Link href={item.linkarticle	}>
-						            <a className={`${ item.linkarticle === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white  '}`}>
+								<Link href={item.linksubtwo	}>
+						            <a className={`${ item.linksubtwo === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white  '}`}>
 						            
 									{item.subtwo}
 						            </a>
@@ -289,8 +205,8 @@ const Nav = () => {
 							</li>
 							<li> 
 							
-								<Link href={item.linkarticle	}>
-						            <a className={`${ item.linkarticle === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white  '}`}>
+								<Link href={item.linksubevro	}>
+						            <a className={`${ item.linksubevro === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white  '}`}>
 						            
 									{item.subevro}
 						            </a>
@@ -298,8 +214,8 @@ const Nav = () => {
 							</li>
 							<li> 
 							
-							<Link href={item.linkarticle	}>
-								<a className={`${ item.linkarticle === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white  '}`}>
+							<Link href={item.linksubfamily	}>
+								<a className={`${ item.linksubfamily === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white  '}`}>
 								
 								{item.subfamily}
 								</a>
