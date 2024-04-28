@@ -38,7 +38,7 @@ module.exports = {
           current: 'currentColor',
           blue: {
            
-            DEFAULT: '#242424',
+            DEFAULT: '#7b8390',
             
           },
           purple: {
@@ -55,14 +55,19 @@ module.exports = {
             DEFAULT: '#e44244',
             dark: '#e44244',
           },
+          text_grey: {
+           
+            DEFAULT: '#222222',
+          
+          },
           text_title:{
             DEFAULT: '#333333',
           },
           bottons:{
-            DEFAULT: '#800000',
+            DEFAULT: '#ffbb56',
           },
           bottons_hover:{
-            DEFAULT: '#ae4e4e',
+            DEFAULT: '#ffd597',
           },
           gray: {
             darkest: '#1f2d3d',

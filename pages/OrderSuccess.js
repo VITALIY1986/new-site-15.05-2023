@@ -6,7 +6,7 @@ const OrderSuccess = ( props ) => {
 		return null;
 	}
 
-	const responseData = '/categori-chantarelle-home';
+	const responseData = '/';
 	
 	window.location.href = responseData;
 

@@ -58,7 +58,7 @@ const HeroCarousel = ({heroCarousel}) => {
 
     return (
         <>
-        <div className="banner   relative  m-auto slidervh slider-color">
+        <div className="banner banner_home_page  relative  m-auto slidervh slider-color">
           
                 {
                     heroCarousel.map( ( item, index ) => {
