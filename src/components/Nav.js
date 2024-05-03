@@ -188,7 +188,7 @@ const Nav = () => {
 							
 							<li> 
 								<Link href={item.linksubone	}>
-						            <a className={`${ item.linksubone=== "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white '}`}>
+						            <a className={`${ item.linksubone=== "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-white  hover:text-white '}`}>
 									{item.subone}
 								
 						            </a>
@@ -196,7 +196,7 @@ const Nav = () => {
 							</li>
 							<li> 
 								<Link href={item.linksubtwo	}>
-						            <a className={`${ item.linksubtwo === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white  '}`}>
+						            <a className={`${ item.linksubtwo === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-white  hover:text-white  '}`}>
 						            
 									{item.subtwo}
 						            </a>
@@ -206,7 +206,7 @@ const Nav = () => {
 							<li> 
 							
 								<Link href={item.linksubevro	}>
-						            <a className={`${ item.linksubevro === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white  '}`}>
+						            <a className={`${ item.linksubevro === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-white  hover:text-white  '}`}>
 						            
 									{item.subevro}
 						            </a>
@@ -215,7 +215,7 @@ const Nav = () => {
 							<li> 
 							
 							<Link href={item.linksubfamily	}>
-								<a className={`${ item.linksubfamily === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-purple-200  hover:text-white  '}`}>
+								<a className={`${ item.linksubfamily === "" ? 'hidden' : 'block py-2 lg:inline-block lg:mt-0 font-thin text-lg text-white  hover:text-white  '}`}>
 								
 								{item.subfamily}
 								</a>
