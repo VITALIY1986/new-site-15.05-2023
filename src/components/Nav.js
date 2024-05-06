@@ -98,10 +98,10 @@ const Nav = () => {
 		subone:"ДОСТАВКА І ОПЛАТА",
 		subtwo:"ОБМІН ТА ПОВЕРНЕННЯ",
 		subevro:"ПРО НАС",
-		subfamily:"КОНТАКТИ",
-	  linksubone:"/",
-	  linksubtwo:"/",
-	  linksubevro:"/",
+		
+	  linksubone:"https://lux-tex.com.ua/",
+	  linksubtwo:"https://lux-tex.com.ua/obmin-ta-povernennya-tovaru",
+	  linksubevro:"https://lux-tex.com.ua/pro-nas",
 	 
 	  
 	  linksubfamily:"/",
