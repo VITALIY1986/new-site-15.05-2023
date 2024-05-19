@@ -146,7 +146,10 @@ export default function Home (props) {
         <div className="animated-background p-4 lg:mr-4"> {/* Additional right margin inside the sidebar on large screens if needed */}
             <h3 className="font-bold text-2xl text-center lg:text-left mb-6 text-black">Обрати розмір постільної білизни</h3>
             {productTags.length ? (
-                productTags.map(category => <ParentTagBlock category={category}/>)
+				productTags
+					.filter(tag => tag.slug !== "navolochky-5070")
+					.filter(tag => tag.slug !== "navolochky-7070")
+                .map(category => <ParentTagBlock category={category}/>)
             ) : ''}
         </div>
     </div>
@@ -155,6 +158,8 @@ export default function Home (props) {
 	
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
             {featuredproducts.length ? (
+				
+			
                 featuredproducts.map(product => <ProductHome key={product.id} isLoggedIn={isLoggedIn} product={product}/>)
             ) : ''}
         </div>
