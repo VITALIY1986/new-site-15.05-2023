@@ -89,7 +89,7 @@ export default function Home (props) {
 			
 			<div className="products container mx-auto px-4 my-10  ">
 					<h2 className="products-main-title main-title mb-10  text-center text-5xl  lg:text-6xl font-bold">Категорії</h2>
-				<div className="products container mx-auto   ">
+				<div className="products container mx-auto hidden lg:block">
 
 				
 				
@@ -119,12 +119,27 @@ export default function Home (props) {
 	  ) : '' }
   
     </Swiper>
-			
+
 			
 	
 			
 		
 			</div>
+			<div className="products container mx-auto  block lg:hidden">
+	{ productCategories.length ? (
+							productCategories
+							.filter(category => category.slug !== "par-landing")
+							.filter(category => category.slug !== "uncategorized")
+							.filter(category => category.slug !== "vitamine-minerale")
+							.filter(category => category.slug !== "advertising-package")
+							.filter(category => category.slug !== "offers")
+							.filter(category => category.slug !== "aloe-vera-pacheta-3-1")
+							.filter(category => category.slug !== "pachete-promotionale")
+							.filter(category => category.slug !== "pachet-frumusete-si-stare-de-bine")
+							.filter(category => category.slug !== "slide1")
+							.map( category => <SwiperSlide >	<ParentCategoryBlock category={ category }/></SwiperSlide> )
+	  ) : '' }
+		</div>
 					{/*Post
 					<div className="products container  mx-auto my-32 px-4 ">
 					<h2 className="products-main-title main-title mb-5 text-3xl text-center uppercase"><span className="main-title-inner">{postsCategory?.name}</span></h2>
