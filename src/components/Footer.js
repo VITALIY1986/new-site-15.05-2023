@@ -31,10 +31,10 @@ const Footer = () => (
 				<div className="col-start-6 col-end-6">
 				     <h3 className="mt-5 text-3xl text-white">МИ В СОЦ.МЕРЕЖАХ</h3>
 				     <ul className="social-links flex  mt-5 ">
-				        <li><a href="/" className="" target="_blank"><Facebook/></a></li>
+				        <li><a href="https://www.facebook.com/people/LUXTEX/100072393695293/?paipv=0&eav=AfaTbrMHcx2gMTM9umvKdlHb04uEA9ltzzh3m0uy6gY7Tf9B85eCjyJYzqTMIzXCabY&_rdr" className="" target="_blank"><Facebook/></a></li>
 				        
-				        <li className="ml-2 mt-1"><a href="/" className="fa fa-youtube" target="_blank"><Youtube/></a></li>
-				        <li className="ml-2"><a href="/" className="fa fa-instagram" target="_blank"><Instagram/></a></li>
+				    
+				        <li className="ml-2"><a href="https://www.instagram.com/luxtex_postil/" className="fa fa-instagram" target="_blank"><Instagram/></a></li>
 			        </ul>
 			   </div>
 			</div>
