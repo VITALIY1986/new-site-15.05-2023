@@ -56,7 +56,7 @@ const PRODUCTS_AND_CATEGORIES_QUERY = gql`query {
       content
     }
   }
-  featuredproducts:  products(where: {featured: true}, first: 8) {
+  featuredproducts:  products(where: {featured: true}, first: 9) {
     nodes {
       id
       productId: databaseId
@@ -111,7 +111,7 @@ const PRODUCTS_AND_CATEGORIES_QUERY = gql`query {
   }
 
 
-  products(where: { onSale: true}, first: 5) {
+  products(where: { onSale: true}, first: 6) {
     nodes {
       id
       productId: databaseId
