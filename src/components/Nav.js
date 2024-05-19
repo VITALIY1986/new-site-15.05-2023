@@ -59,10 +59,11 @@ const Nav = () => {
 		id:5,
 		  title: "ДИТЯЧІ",
 		  subone:"півтораспальні",
-		
+		  subtwo:"в ліжечко",
+		  subevro:"ковдри та подушки",
 		linksubone:"https://lux-tex.com.ua/tag/dytyachi-polutornyy",
-		linksubtwo:"/",
-		linksubevro:"/",
+		linksubtwo:"https://lux-tex.com.ua/tag/dytyachi-v-lizhechko",
+		linksubevro:"https://lux-tex.com.ua/tag/dytiachi-covdry-ta-podushky",
 		
 		linksubfamily:"/",
 	  },
