@@ -38,7 +38,7 @@ const Footer = () => (
 			        </ul>
 			   </div>
 			</div>
-			<div className="text-center pt-6"> Всі права захищені / розроблено ©PixelCraft Media Solutions</div>
+			<div className="text-center pt-6">© Всі права захищені / розроблено PixelCraft Media Solutions</div>
 		</div>
 	</div>
 );
