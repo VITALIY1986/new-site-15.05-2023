@@ -133,11 +133,11 @@ export default function Home (props) {
 							.filter(category => category.slug !== "vitamine-minerale")
 							.filter(category => category.slug !== "advertising-package")
 							.filter(category => category.slug !== "offers")
-							.filter(category => category.slug !== "aloe-vera-pacheta-3-1")
-							.filter(category => category.slug !== "pachete-promotionale")
-							.filter(category => category.slug !== "pachet-frumusete-si-stare-de-bine")
+							.filter(category => category.slug !== "biazi-pivtoraspalnyy")
+							.filter(category => category.slug !== "strayp-satyn-dvospalnyy")
+							.filter(category => category.slug !== "biazi-dvospalnyy")
 							.filter(category => category.slug !== "slide1")
-							.map( category => <SwiperSlide >	<ParentCategoryBlock category={ category }/></SwiperSlide> )
+							.map( category => <SwiperSlide >	<ParentCategoryBlock  category={ category }/></SwiperSlide> )
 	  ) : '' }
 		</div>
 					{/*Post
