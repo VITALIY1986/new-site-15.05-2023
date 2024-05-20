@@ -170,7 +170,7 @@ export default function Home (props) {
     </div>
     <div className="flex-grow">
 	
-	
+	<h2 className="products-main-title main-title mb-10  text-center text-5xl  lg:text-6xl font-bold">Популярні товари</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
             {featuredproducts.length ? (
 				
