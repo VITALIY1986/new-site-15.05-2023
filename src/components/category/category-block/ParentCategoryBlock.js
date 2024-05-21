@@ -14,7 +14,7 @@ const ParentCategoryBlock = ( props ) => {
 		
 			<Link href={`/category/${category?.slug}`}>
 				<div className='bg-white p-2 animated-background'>
-				<a>
+			
 					<Image
 					height={900} width={900}
 					objectPosition="center center" fill={true} objectFit={'cover'}
@@ -28,8 +28,7 @@ const ParentCategoryBlock = ( props ) => {
 					/>
 					
 					<h3 className="absolute top-2 left-2 text-text_grey bg-bottons px-2 py-2 rounded-lg">{category?.name}</h3>
-					
-				</a>
+				
 				</div>
 			</Link>
 		
