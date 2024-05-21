@@ -40,7 +40,7 @@ const result = amount/interest;
 							loading="lazy"
 							sourceUrl={ product?.image?.sourceUrl ?? '' }
 							defaultImgUrl={DEFAULT_PRODUCT_HOME_IMG_URL}
-							altText={product?.image?.altText ?? product?.slug}
+							altText={product.name}
 						/>
 					
 					
