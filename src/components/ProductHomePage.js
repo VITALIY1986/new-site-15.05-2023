@@ -32,7 +32,7 @@ const result = amount/interest;
 
 
 				<Link href={ `/product/${ product?.slug }`} >
-					<a>
+				
 						<Image
 							className="object-cover bg-gray-100"
 							width="500"
@@ -42,7 +42,7 @@ const result = amount/interest;
 							defaultImgUrl={DEFAULT_PRODUCT_HOME_IMG_URL}
 							altText={product?.image?.altText ?? product?.slug}
 						/>
-					</a>
+					
 					
 				</Link>
 				<div className="mt-3 text-center pl-2 md:pl-3 font-semibold text-text_title text-lg uppercase">{product.name}</div>

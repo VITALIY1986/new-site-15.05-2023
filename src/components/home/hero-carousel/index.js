@@ -67,7 +67,7 @@ const HeroCarousel = ({heroCarousel}) => {
                             <>
                             <div class="marquee  font-playfair font-bold "><span>{heroCarousel[activeIndex]?.name} </span></div>
                             <div key={item?.id}className={`${opacity} solid_corection banner-img-container absolute top-0 left-0 bottom-0 transition duration-500 ease-in-out  w-full slidervh overflow-hidden`}>
-                                <img className={`h-full w-full object-cover`}
+                                <img className={`h-full w-full object-cover`} alt={heroCarousel[activeIndex]?.name}
                                     src={item?.image?.sourceUrl} srcSet={item?.image?.srcSet} loading="lazy"    width="1000"
                                     height="500"
                                 />
