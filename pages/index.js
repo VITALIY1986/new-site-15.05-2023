@@ -202,7 +202,7 @@ export default function Home (props) {
 						<div><strong>	Приєднуйтеся за посиланям нижче:</strong></div>
 							<a href=" https://invite.viber.com/?g=Jzq36PUtHFBHc7yo6PwO9LwZE1xOid_3"><button className="button  text-white px-5 py-5 mt-10 rounded-full w-full ">Приєднатися <strong>Viber</strong></button></a>
 					</div>
-					<div onClick={handleDownload} className="w-full lg:w-6/12 m-3  relative "><Image       src={Telegram}  />
+					<div onClick={handleDownload} className="w-full lg:w-6/12 m-3  relative "><Image    alt="viber -luxtex"   src={Telegram}  />
 						
 					</div>
 				</div>
