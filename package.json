@@ -16,6 +16,7 @@
     "@svgr/cli": "^6.1.1",
     "@wordpress/html-entities": "^3.2.2",
     "axios": "^0.21.1",
+    "caniuse-lite": "^1.0.30001668",
     "classnames": "^2.2.6",
     "dompurify": "^2.3.4",
     "fuse.js": "^6.5.3",

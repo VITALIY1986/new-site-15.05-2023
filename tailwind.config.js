@@ -38,7 +38,7 @@ module.exports = {
           current: 'currentColor',
           blue: {
            
-            DEFAULT: '#7b8390',
+            DEFAULT: '#212b3d',
             
           },
           purple: {
